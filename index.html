@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="src/components/icons/favico/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/components/layout/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="layout-container">
+        <div class="container">
+            <div class="side-react">
+                <div class="header-title">
+                    <div class="card-header">
+                        <div class="card-title d-center">
+                            <img src="src/components/icons/favico/favicon.png" width="40" alt="favicon">
+                        </div>
+                        <div class="card-title d-align">
+                            <text class="bold fs-12 col-blue-grad">mcfela</text>
+                        </div>
+                    </div>
+                </div>
+                <div class="pager-items">
+                    <div class="card-items data-active" onclick="frameHome()">
+                        <div class="data-item d-center">
+                            <img class="img" src="src/components/icons/home.svg" alt="home">
+                        </div>
+                        <div class="data-item d-align">
+                            <text>Home</text>
+                        </div>
+                    </div>
+                    <div class="card-items data-unactive" onclick="frameProjects()">
+                        <div class="data-item d-center">
+                            <img class="img" src="src/components/icons/project.svg" alt="project">
+                        </div>
+                        <div class="data-item d-align">
+                            <text>Projects</text>
+                        </div>
+                        <div class="data-item d-center">
+                            <div class="card-more d-center">
+                                <img src="src/components/icons/add.svg" alt="fa-plus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-items data-unactive">
+                        <div class="data-item d-center">
+                            <img class="img" src="src/components/icons/team.svg" alt="team">
+                        </div>
+                        <div class="data-item d-align">
+                            <text>Team</text>
+                        </div>
+                        <div class="data-item d-center">
+                            <div class="card-more d-center">
+                                <img src="src/components/icons/add.svg" alt="fa-plus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-items data-unactive">
+                        <div class="data-item d-center">
+                            <img class="img" src="src/components/icons/settings.svg" alt="settings">
+                        </div>
+                        <div class="data-item d-align">
+                            <text>Settings</text>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-message d-center">
+                    <div class="data-message">
+                        <text class="fs-10 bold col-white">Upgrade to Pro</text>
+                        <br>
+                        <div class="transY-1">
+                            <text class="fs-8 lnh-10 col-light-grey">Get 1 month free <br> and unlock</text>
+                        </div><br>
+                        <button class="btn-upgrade">
+                            <text class="fs-10 bold">Upgrade</text>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom-pager">
+                    <div class="card-items card-bottom">
+                        <div class="data-item d-center">
+                            <img class="img" src="src/components/icons/help.svg" alt="help">
+                        </div>
+                        <div class="data-item d-align">
+                            <text>FAQ</text>
+                        </div>
+                        <div class="data-item d-center">
+                            <div class="card-more bg-unset d-center">
+                                <img src="src/components/icons/bulb.svg" alt="fa-bulb">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-items card-bottom">
+                        <div class="data-item d-center">
+                            <img class="img" src="src/components/icons/logout.svg" alt="Logout">
+                        </div>
+                        <div class="data-item d-align">
+                            <text>Log out</text>
+                        </div>
+                        <div class="data-item d-center">
+                            <div class="card-more bg-unset d-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container main-content">
+            <section class="main">
+                <div class="main-header d-center">
+                    <div class="card-main-head">
+                        <div class="left welcome-char">
+                            <div class="card-wel-char d-center" onclick="menu()">
+                                <img src="src/components/icons/project.svg" alt="fa-sidebar">
+                            </div>
+                            <div class="card-wel-char">
+                                <text class="bold fs-large">Good evening,</text>
+                            <text class="fs-12 col-blue bold fs-larger">Alex</text>
+                            </div>
+                        </div>
+                        <div class="right-absolute right-ash">
+                            <button class="btn-primary">
+                                <text class="">
+                                    Get Started
+                                </text>
+                            </button>
+                            <div class="search-bar top-search">
+                                <div class="search-char d-center">
+                                    <img src="src/components/icons/search.svg" alt="fa-search">
+                                </div>
+                                <div class="search-char">
+                                    <input type="text" placeholder="Search">
+                                </div>
+                                <div class="search-char d-center">
+                                    <img src="src/components/icons/cmd.svg" alt="fa-cmd">
+                                </div>
+                            </div>
+                            <div class="start-link">
+                                <main class="d-center">
+                                    <img src="src/components/icons/chart.svg" alt="fa-chart">
+                                </main>
+                                <main class="d-align">
+                                    <text class="font-medium col-grey">Portfolio</text>
+                                </main>
+                            </div>
+                            <div class="start-link">
+                                <main class="d-center">
+                                    <img src="src/components/icons/star.svg" alt="fa-star">
+                                </main>
+                                <main class="d-align">
+                                    <text class="font-medium col-grey">Cart</text>
+                                </main>
+                            </div>
+                        </div>
+                        <div class="card-wel-char-2 d-center">
+                            <img src="src/components/icons/project.svg" alt="fa-sidebar">
+                        </div>
+                    </div>
+                </div>
+                <div class="page-indicator-container d-center">
+                    <div class="page-indicator">
+                        <a href="#/index.html">
+                            <div class="indicator d-center">
+                                <text id="indicator1">Home</text>
+                            </div>
+                        </a>
+                        <div class="indicator arrow d-center">
+                            <img src="src/components/icons/arrow-left.svg" alt="fa-arrow-left">
+                        </div>
+                        <a href="#/dashboard.html">
+                            <div class="indicator d-center" onclick="frameProjects()">
+                                <text id="indicator2">Projects</text>
+                            </div>
+                        </a>
+                        <div class="indicator arrow d-center" id="show">
+                            <img src="src/components/icons/arrow-left.svg" alt="fa-arrow-left">
+                        </div>
+                        <a href="#">
+                            <div class="indicator d-center bg-unset op-07">
+                                <text id="indicator3">Shop</text>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-sect"></div>
+                <iframe src="projects.html" frameborder="0" id="frame"></iframe>
+            </section>
+            <section>
+                <div class="user-profile d-center">
+                    <img src="src/components/avatar/man.png" alt="avatar">
+                </div>
+                <div class="mg-auto d-center">
+                    <img src="src/components/icons/team2.svg" alt="fa-team">
+                </div>
+                <div class="mg-auto d-center">
+                    <div class="team">
+                        <div class="card-team">
+                            <div class="pre-status online"></div>
+                            <img src="src/components/avatar/smith.jpg" alt="">
+                            <div class="mg-auto d-center">
+                                <div class="user-status absolute">
+                                    <div class="card-status-user d-center">
+                                        <img src="src/components/icons/signal.svg" alt=" fa-signal">
+                                    </div>
+                                    <div class="card-status-user d-align">
+                                        <text class="bold">4min</text>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-team">
+                            <div class="pre-status online"></div>
+                            <img src="src/components/avatar/kate.png" alt="">
+                        </div>
+                        <div class="card-team">
+                            <div class="pre-status offline"></div>
+                            <img src="src/components/avatar/yamahr.png" alt="">
+                        </div>
+                        <div class="card-team">
+                            <div class="pre-status offline"></div>
+                            <img src="src/components/avatar/kiara.png" alt="">
+                        </div>
+                        <div class="card-team">
+                            <div class="pre-status offline"></div>
+                            <img src="src/components/avatar/stacy.png" alt="">
+                        </div>
+                        <div class="card-team">
+                            <div class="pre-status offline"></div>
+                            <img src="src/components/avatar/mich.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="mg-auto d-center">
+                    <img src="src/components/icons/messages.svg" alt="fa-messages">
+                </div>
+                <div class="team">
+                    <div class="card-team">
+                        <div class="pre-status online"></div>
+                        <img src="src/components/avatar/gwen.jpg" alt="">
+                    </div>
+                </div>
+                <div class="block" onclick="hideMenu()" id="block"></div>
+                <div class="side-media" id="side-bar">
+                    <div class="header-title">
+                        <div class="card-header">
+                            <div class="card-title d-center">
+                                <img src="src/components/icons/favico/favicon.png" width="40" alt="favicon">
+                            </div>
+                            <div class="card-title d-align">
+                                <text class="bold fs-12 col-blue-grad">mcfela</text>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pager-items">
+                        <div class="card-items data-active" onclick="frameHome()">
+                            <div class="data-item d-center">
+                                <img class="img" src="src/components/icons/home.svg" alt="home">
+                            </div>
+                            <div class="data-item d-align">
+                                <text>Home</text>
+                            </div>
+                        </div>
+                        <div class="card-items data-unactive" onclick="frameProjects()">
+                            <div class="data-item d-center">
+                                <img class="img" src="src/components/icons/project.svg" alt="project">
+                            </div>
+                            <div class="data-item d-align">
+                                <text>Projects</text>
+                            </div>
+                            <div class="data-item d-center">
+                                <div class="card-more d-center">
+                                    <img src="src/components/icons/add.svg" alt="fa-plus">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-items data-unactive">
+                            <div class="data-item d-center">
+                                <img class="img" src="src/components/icons/team.svg" alt="team">
+                            </div>
+                            <div class="data-item d-align">
+                                <text>Team</text>
+                            </div>
+                            <div class="data-item d-center">
+                                <div class="card-more d-center">
+                                    <img src="src/components/icons/add.svg" alt="fa-plus">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-items data-unactive">
+                            <div class="data-item d-center">
+                                <img class="img" src="src/components/icons/settings.svg" alt="settings">
+                            </div>
+                            <div class="data-item d-align">
+                                <text>Settings</text>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-message d-center">
+                        <div class="data-message">
+                            <text class="fs-10 bold col-white">Upgrade to Pro</text>
+                            <br>
+                            <div class="transY-1">
+                                <text class="fs-8 lnh-10 col-light-grey">Get 1 month free <br> and unlock</text>
+                            </div><br>
+                            <button class="btn-upgrade">
+                                <text class="fs-10 bold">Upgrade</text>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bottom-pager">
+                        <div class="card-items card-bottom">
+                            <div class="data-item d-center">
+                                <img class="img" src="src/components/icons/help.svg" alt="help">
+                            </div>
+                            <div class="data-item d-align">
+                                <text>FAQ</text>
+                            </div>
+                            <div class="data-item d-center">
+                                <div class="card-more bg-unset d-center">
+                                    <img src="src/components/icons/bulb.svg" alt="fa-bulb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-items card-bottom">
+                            <div class="data-item d-center">
+                                <img class="img" src="src/components/icons/logout.svg" alt="Logout">
+                            </div>
+                            <div class="data-item d-align">
+                                <text>Log out</text>
+                            </div>
+                            <div class="data-item d-center">
+                                <div class="card-more bg-unset d-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <nav class="media-nav">
+        <div class="nav d-center">
+            <div class="search-bar">
+                <div class="search-char d-center">
+                    <img src="src/components/icons/search.svg" alt="fa-search">
+                </div>
+                <div class="search-char">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="search-char d-center">
+                    <img src="src/components/icons/cmd.svg" alt="fa-cmd">
+                </div>
+            </div>
+        </div>
+        <div class="nav d-center">
+            <div class="mg-auto">
+                <div class="card-nav" onclick="frameHome()">
+                    <div class="n-00 d-center">
+                        <img src="src/components/icons/home2.svg" alt="fa-home">
+                    </div>
+                    <div class="n-00 d-center">
+                        <text class="col-dark-grey-5 ltsp-01">Home</text>
+                    </div>
+                </div>
+                <div class="card-nav" onclick="frameProjects()">
+                    <div class="n-00 d-center">
+                        <img src="src/components/icons/project.svg" width="23" alt="fa-home">
+                    </div>
+                    <div class="n-00 d-center">
+                        <text class="col-dark-grey-5 ltsp-01">Projects</text>
+                    </div>
+                </div>
+                <div class="card-nav">
+                    <div class="n-00 d-center">
+                        <img src="src/components/icons/team.svg" width="22" alt="fa-home">
+                    </div>
+                    <div class="n-00 d-center">
+                        <text class="col-dark-grey-5 ltsp-01">Team</text>
+                    </div>
+                </div>
+                <div class="card-nav">
+                    <div class="n-00 d-center">
+                        <img src="src/components/icons/option.svg" width="22" alt="fa-home">
+                    </div>
+                    <div class="n-00 d-center">
+                        <text class="col-dark-grey-5 ltsp-01">more</text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+ function menu() {
+    var side_bar = document.getElementById("side-bar")
+    var block = document.getElementById("block")
+
+    setTimeout(() => {
+        side_bar.style.transform = 'translateX(0)'
+        block.style.visibility = 'visible'
+        block.style.opacity = 1
+    }, 0);
+ }
+
+ function hideMenu() {
+    var side_bar = document.getElementById("side-bar")
+    var block = document.getElementById("block")
+
+    setTimeout(() => {
+        side_bar.style.transform = 'translateX(-100%)'
+        block.style.visibility = 'hidden'
+        block.style.opacity = 0
+    }, 0);
+ }
+
+ function frameProjects() {
+    var frame = document.getElementById('frame')
+    var indicator = document.getElementById('indicator2')
+var indicator3 = document.getElementById('indicator3')
+var card0 = document.getElementsByClassName('card-items')[0]
+    var card1 = document.getElementsByClassName('card-items')[1]
+    var card2 = document.getElementsByClassName('card-items')[2]
+    var card3 = document.getElementsByClassName('card-items')[3]
+frame.style.scale = 1.03
+frame.style.opacity = 0
+
+
+if(card1.click) {
+        card0.style.background = 'unset'
+            card1.style.background = '#648ebe15'
+    card0.style.opacity = .5
+    card1.style.opacity = 1
+    card2.style.opacity = .5
+    card3.style.opacity = .5
+}
+
+setTimeout(() => {
+    frame.src='projects.html'
+    frame.style.scale = .97
+        indicator.innerHTML='Projects'
+    indicator3.innerHTML='Shop'
+frame.style.opacity = 0
+}, 500);
+setTimeout(() => {
+    frame.style.scale = 1
+frame.style.opacity = 1
+}, 700);
+hideMenu()
+}
+
+function frameHome() {
+    var frame = document.getElementById('frame')
+    var indicator = document.getElementById('indicator2')
+    var indicator3 = document.getElementById('indicator3')
+    var card0 = document.getElementsByClassName('card-items')[0]
+    var card1 = document.getElementsByClassName('card-items')[1]
+    var card2 = document.getElementsByClassName('card-items')[2]
+    var card3 = document.getElementsByClassName('card-items')[3]
+frame.style.scale = 1.03
+frame.style.opacity = 0
+
+
+if(card0.click) {
+        card1.style.background = 'unset'
+            card0.style.background = '#648ebe15'
+    card0.style.opacity = 1
+    card1.style.opacity = .5
+    card2.style.opacity = .5
+    card3.style.opacity = .5
+}
+
+setTimeout(() => {
+    frame.src='dashboard.html'
+    frame.style.scale = .97
+        indicator.innerHTML='Dashboard'
+        indicator3.innerHTML='Overview'
+frame.style.opacity = 0
+}, 500);
+setTimeout(() => {
+    frame.style.scale = 1
+frame.style.opacity = 1
+}, 700);
+hideMenu()
+}
+    </script>
+</body>
+</html>

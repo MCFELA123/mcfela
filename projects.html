@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/components/layout/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<body>
+<body class="d-container">
+    <div class="project-container" id="project">
+        <div class="onmedia-filter-settings d-center" onclick="filterShow()">
+            <img src="src/components/icons/settings.svg"  alt="">
+        </div>
+        <script>
+            function filterShow() {
+                var Filtercon = document.getElementById('filt')
+                var Filter = document.getElementById('filter-container')
+
+                Filter.style.transform = 'translateX(105%)'
+                Filtercon.style.zIndex = 999
+                Filter.style.boxShadow = '0 0 1.5em 0 #648ebe30'
+                return
+            }
+
+            function filterHide() {
+                var Filtercon = document.getElementById('filt')
+                var Filter = document.getElementById('filter-container')
+
+                Filter.style.transform = 'translateX(0)'
+                Filtercon.style.zIndex = 'unset'
+                Filter.style.boxShadow = '0 0 0 0 #648ebe30'
+                return
+            }
+        </script>
+        <div class="project-card">
+            <div class="card-project" id="filt">
+                <div class="mg-auto"><br>
+                    <text class="col-dark-grey-4 fs-large">Filter</text>
+                    <br><br>
+                    <div class="filter-container" id="filter-container">
+                        <br>
+                        <div class="mg-auto">
+                            <text class="col-dark-grey-4 font-medium">Multi Range</text>
+                            <div class="right close-filter d-center" onclick="filterHide()">
+                                <text class="bold">&times;</text>
+                            </div>
+                            <br><div class="br-list br-first">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist active"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4 font-medium">All</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4 font-medium"><= $10 </text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4 font-medium">$10 - $100</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4 font-medium">$100 - $500</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4 font-medium">>= $500</text>
+                                </div>
+                            </div><br><br><br>
+                            <text class="col-dark-grey-4 font-medium">Price Range</text>
+                            <br><br>
+                            <div class="range">
+                                <div class="range-slider">
+                                  <span class="range-selected"></span>
+                                </div>
+                                <div class="range-input">
+                                  <input type="range" class="min" min="0" max="1000" value="300" step="10">
+                                  <input type="range" class="max" min="0" max="1000" value="700" step="10">
+                                </div>
+                                <div class="range-price">      
+                                  <label for="min">
+                                    <text class="col-dark-grey-4 font-medium">Min</text>
+                                  </label>
+                                  <input type="text" class="ranger" name="min" value="300">      
+                                  <label for="max">
+                                    <text class="col-dark-grey-4 font-medium">Max</text>
+                                  </label>
+                                  <input type="text" class="ranger" name="max" value="700">      
+                                </div>
+                              </div> 
+                              <br><text class="col-dark-grey-4 font-medium">Categories</text><br>
+                              <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4">Popular </text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4">Top free</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4">Paid</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4">Dashboard UI</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4">E-commerce UI</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4">Web Apps</text>
+                                </div>
+                            </div><br>
+                            <div class="br-list">
+                                <div class="card-br-list d-align">
+                                    <div class="checklist"></div>
+                                </div>
+                                <div class="card-br-list d-align">
+                                    <text class="col-dark-grey-4">Backend Templates</text>
+                                </div>
+                            </div>
+                            <br><br><br><text class="col-dark-grey-4 font-medium">Ratings</text><br>
+                            <div class="mgt-10">
+                                <div class="left">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                </div>
+                                <div class="right">
+                                    <text class="col-dark-grey-4">160</text>
+                                </div>
+                            </div>
+                            <div class="mgt-10">
+                                <div class="left">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                </div>
+                                <div class="right">
+                                    <text class="col-dark-grey-4">176</text>
+                                </div>
+                            </div>
+                            <div class="mgt-10">
+                                <div class="left">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                </div>
+                                <div class="right">
+                                    <text class="col-dark-grey-4">291</text>
+                                </div>
+                            </div>
+                            <div class="mgt-10">
+                                <div class="left">
+                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                </div>
+                                <div class="right">
+                                    <text class="col-dark-grey-4">190</text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-project">
+                <br>
+                <div class="mgauth">
+                    <div class="product-group">
+                        <text class="col-dark-grey-4">27 results found</text>
+                    </div>
+                    <div class="product-group">
+                        <div class="right ty-10rev">
+                            <div class="card-span">
+                                <div class="feat-choose">
+                                    <div class="card-feat d-align">
+                                        <text>Featured</text>
+                                    </div>
+                                    <div class="card-feat d-align">
+                                        <img src="src/components/icons/arrow-down.svg" alt="fa-arrow">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-span">
+                                <div class="view-choose d-align">
+                                    <div class="card-choose d-center">
+                                        <img src="src/components/icons/project-2.svg" alt="fa-project">
+                                    </div>
+                                    <div class="card-choose d-center">
+                                        <img src="src/components/icons/list.svg" alt="fa-listd">
+                                    </div>
+                                    <div class="chooser"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div id="product-items" class="myclass" hidden>
+
+                    </div>
+                    <div class="search-bar product-search">
+                        <div class="search-char d-center">
+                            <img src="src/components/icons/search.svg" alt="fa-search">
+                        </div>
+                        <div class="search-char">
+                            <input type="text" placeholder="Search Templates..">
+                        </div>
+                        <div class="search-char d-center cursor-point">
+                            <img src="src/components/icons/option.svg" alt="fa-cmd">
+                        </div>
+                </div>
+                <br><br>
+                <div class="product-container" id="product-container">
+                    <a href="#product-sonoma.html" class="a">
+                        <div class="card-product" onclick="productSonoma()">
+                            
+                                <div class="cd-p0 d-center">
+                                    <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                </div>
+                                <div class="cd-p0">
+                                    <div class="cd-after">
+                                        <div class="left">
+                                            <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                            <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                            <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                            <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                            <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                        </div>
+                                        <div class="right">
+                                            <text class="col-dark-grey-5">$159.99</text>
+                                        </div>
+                                        <br><br>
+                                       <div class="resm">
+                                        <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
+                                        <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="cd-p01">
+                                    <div class="card-p01 d-center">
+                                        <div class="p01 d-center">
+                                            <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                        </div>
+                                        <div class="p01 d-align">
+                                            <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                        </div>
+                                    </div>
+                                    <div class="card-p01 d-center">
+                                        <div class="p01 d-center">
+                                            <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                        </div>
+                                        <div class="p01 d-align">
+                                            <text class="col-white font-medium">Add to cart</text>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="#product-webos.html" class="a">
+                                <div class="card-product" onclick="productWebOS()">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/webos.avif" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$399.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">weOS 6.0 beta</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/windows.png" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$229.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">Windows beta</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="130" src="src/components/img/product icons/ios.jpg" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$599.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">iOS beta stable</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/des.avif" class="br-10" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$159.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">Workout App</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with pure html and css, see wh..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="180" class="br-10" src="src/components/img/product icons/des1.jpg" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$59.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">Dashboard UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="180" class="br-10" src="src/components/img/product icons/des2.png" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$79.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">Contact list UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$159.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$159.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$159.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$159.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="d">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$159.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                </div>
+
+                </div>
+                <div class="product-container op-0">
+                    <div class="card-product">
+                        <br><br>lost
+                    </div>
+                    <div class="card-product">
+                        <br>
+                    </div>
+                    <div class="card-product">
+                        <br>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-sects d-center">
+            <div class="spinner">
+                <div></div>   
+                <div></div>    
+                <div></div>    
+                <div></div>    
+              </div>
+        </div>
+    </div>
+    <iframe src="" frameborder="0" class="product-frame" id="frame"></iframe>
+    <script>
+ function productSonoma() {
+    var frame = document.getElementById('frame')
+    var project = document.getElementById('project')
+project.style.scale = 1.03
+project.style.opacity = 0
+project.style.visibility = 'hidden'
+
+setTimeout(() => {
+    frame.style.zIndex = 1
+}, 200);
+
+setTimeout(() => {
+    frame.src='product-sonoma.html'
+    frame.style.scale = 1
+frame.style.opacity = 1
+frame.style.visibility = 'visible'
+}, 500);
+}
+
+function productWebOS() {
+    var frame = document.getElementById('frame')
+    var project = document.getElementById('project')
+project.style.scale = 1.03
+project.style.opacity = 0
+project.style.visibility = 'hidden'
+
+setTimeout(() => {
+    frame.style.zIndex = 1
+}, 200);
+
+setTimeout(() => {
+    frame.src='product-webos.html'
+    frame.style.scale = 1
+frame.style.opacity = 1
+frame.style.visibility = 'visible'
+}, 500);
+}
+
+
+    window.onload = function(){
+        document.querySelector(".d-sects").style.visibility = "hidden";
+        document.querySelector(".d-sects").style.opacity = 0
+    }
+
+        let rangeMin = 100;
+const range = document.querySelector(".range-selected");
+const rangeInput = document.querySelectorAll(".range-input input");
+const rangePrice = document.querySelectorAll(".range-price input");
+
+rangeInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minRange = parseInt(rangeInput[0].value);
+    let maxRange = parseInt(rangeInput[1].value);
+    if (maxRange - minRange < rangeMin) {     
+      if (e.target.className === "min") {
+        rangeInput[0].value = maxRange - rangeMin;        
+      } else {
+        rangeInput[1].value = minRange + rangeMin;        
+      }
+    } else {
+      rangePrice[0].value = minRange;
+      rangePrice[1].value = maxRange;
+      range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+      range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
+    </script>
+    <div class="foot"></div>
+</body>
+</html>

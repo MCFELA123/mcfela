@@ -1,0 +1,109 @@
+<div class="card-buinfo">
+                    <br><br>
+                    <text class="bold col-blue">
+                        NEW ERA
+                    </text><br>
+                    <text class="fs-15 bold col-dark-blue">
+                        Browse <text class="col-blue bold">100+</text> templates
+                    </text><br>
+                    <text class="fs-small col-grey-3">
+                        Explore all templates <br> and own a site.
+                    </text><br>
+                    <button class="btn-upgrade ty-11">
+                        <text class="fs-10 bold">Get started</text>
+                    </button>
+                </div>
+                <div class="card-buinfo d-center">
+                    <div class="buinfo absolute d-center">
+                        <img width="30" src="src/components/icons/cart-2.svg" alt="fa-cart">
+                    </div>
+                    <div class="buinfo">
+                        <div class="buproduct d-center">
+                            <img width="80" class="ty-11" src="src/components/img/nikeshoe.png" alt="">
+                        </div>
+                        <div class="bui">
+                            <text class="right fs-small bold col-dark-blue">Nike air force</text><br>
+                            <div class="right ty-09">
+                                <div class="meter">
+                                    <div class="card-meter"></div>
+                                </div>
+                                <text class="fs-small bold col-grey-3 right">
+                                    <small>45/100</small>
+                                </text>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buinfo absolute d-center">
+                        <img width="105" src="src/components/img/stats.png" alt="statistcs">
+                    </div>
+                </div>
+
+                <style>
+                    .buinfo-container .card-buinfo {
+    float: left;
+    height: 100%;
+}
+
+.buinfo-container .card-buinfo:first-child {
+    width: 40%;
+    padding-left: 8%;
+    /* background: #000; */
+}
+
+.buinfo-container .card-buinfo:last-child {
+    width: 52%;
+    transform: translateX(5%);
+}
+
+.buinfo-container .card-buinfo:last-child .buinfo {
+    width: 8em;
+    height: 10em;
+    background: white;
+    border-radius: 1em;
+    box-shadow: -4px 7px 1em 0 #648ebe20;
+}
+
+.buinfo-container .card-buinfo:last-child .buinfo:first-child {
+    width: 3.5em;
+    height: 3.5em;
+    transform: translateX(3.5em) translateY(-4.5em);
+    box-shadow: -7px 9px 1em 0 #648ebe20;
+}
+
+.buinfo-container .card-buinfo:last-child .buinfo:last-child {
+    width: 8em;
+    height: 5em;
+    transform: translateX(-3em) translateY(4.7em);
+    box-shadow: 7px 1px 1em 0 #648ebe20;
+}
+
+.buinfo-container .card-buinfo:last-child .buinfo .buproduct {
+    width: 85%;
+    height: 5em;
+    border-radius: .85em;
+    margin: 10px auto;
+    background: #648ebe15;
+}
+
+.bui {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.meter {
+    width: 3em;
+    height: 7px;
+    overflow: hidden;
+    border-radius: 1em;
+    background: #648ebe30;
+}
+
+.meter .card-meter {
+    float: right;
+    width: 50%;
+    height: inherit;
+    border-radius: 1em;
+    background: #003cff;
+    box-shadow: -3px 0 5px 0 #648ebefb;
+}
+                </style>
