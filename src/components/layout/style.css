@@ -1976,19 +1976,19 @@ a {
 }
 
 .webOS {
-    background-image: url('src/components/img/webos.png');
+    background-image: url('./src/components/img/webos.png');
 }
 
 .macOS {
-    background-image: url('src/components/img/macos.jpg');
+    background-image: url('./src/components/img/macos.jpg');
 }
 
 .ios {
-    background-image: url('src/components/img/ios.avif');
+    background-image: url('./src/components/img/ios.avif');
 }
 
 .win11 {
-    background-image: url('src/components/img/win11.webp');
+    background-image: url('./src/components/img/win11.webp');
 }
 
 .shad-right {
