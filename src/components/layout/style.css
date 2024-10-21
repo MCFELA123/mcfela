@@ -111,6 +111,19 @@ iframe {
     }
 }
 
+@media(max-width:450px) {
+    .card-screen-container .card-screen {
+        width: 20em !important;
+        height: 10em !important;
+        overflow: hidden;
+    }
+    .card-screen-container .card-screen img {
+        width: inherit !important;
+        scale: 1 !important;
+        height: unset !important;
+    }
+}
+
 .card-product-details .product-details .screenshots {
     border-radius: 0;
     background: #33649c11;
@@ -134,7 +147,7 @@ iframe {
 .card-screen-container .card-screen {
     flex: 0 0 auto;
     float: left;
-
+    cursor: pointer;
     border-radius: 1em;
     margin-left: 10px;
     overflow: hidden;
@@ -506,8 +519,15 @@ iframe {
 
 @media(max-width:720px) {
     .card-product {
-        width: 93% !important;
+        width: 45% !important;
         margin-left: 3.5% !important;
+    }
+}
+
+@media(max-width:500px) {
+    .card-product {
+        width: 85% !important;
+        margin-left: 8% !important;
     }
 }
 
@@ -639,7 +659,7 @@ iframe {
     width: 1em;
     height: 1em;
     scale: .5;
-    margin-top: -20vmax;
+    margin-top: -23vmax;
     animation: spinner-o824ag 1s infinite linear;
  }
  
