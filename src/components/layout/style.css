@@ -1432,7 +1432,7 @@ a {
 
 @media(max-width:500px) {
     .typer {
-        transform: translateX(50%) !important;
+        transform: translateX(55%) !important;
     }
     .animated-card  {
         border-radius: 1em !important;
@@ -1976,19 +1976,19 @@ a {
 }
 
 .webOS {
-    background-image: url('./src/components/img/webos.png');
+    background-image: url('https://github.com/MCFELA123/mcfela/blob/main/src/components/img/macos.png?raw=true');
 }
 
 .macOS {
-    background-image: url('./src/components/img/macos.jpg');
+    background-image: url('https://github.com/MCFELA123/mcfela/blob/main/src/components/img/macos.jpg?raw=true');
 }
 
 .ios {
-    background-image: url('./src/components/img/ios.avif');
+    background-image: url('https://github.com/MCFELA123/mcfela/blob/main/src/components/img/ios.avif?raw=true');
 }
 
 .win11 {
-    background-image: url('./src/components/img/win11.webp');
+    background-image: url('https://github.com/MCFELA123/mcfela/blob/main/src/components/img/win11.webp?raw=true');
 }
 
 .shad-right {
