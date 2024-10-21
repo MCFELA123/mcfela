@@ -1438,6 +1438,10 @@ a {
         border-radius: 1em !important;
         width: 95% !important;
     }
+    .pile {
+        margin-left: 1.1em !important;
+        margin-top: .8em !important;
+    }
 }
 
 .pile {
