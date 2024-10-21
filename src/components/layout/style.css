@@ -1425,8 +1425,19 @@ a {
 .card-an .typer {
     position: absolute;
     width: 15.5em;
+    transition: all .2s ease;
     transform: translateY(-.15em);
     right: 0;
+}
+
+@media(max-width:500px) {
+    .typer {
+        transform: translateX(50%) !important;
+    }
+    .animated-card  {
+        border-radius: 1em !important;
+        width: 95% !important;
+    }
 }
 
 .pile {
@@ -1965,19 +1976,19 @@ a {
 }
 
 .webOS {
-    background-image: url('/src/components/img/webos.png');
+    background-image: url('src/components/img/webos.png');
 }
 
 .macOS {
-    background-image: url('/src/components/img/macos.jpg');
+    background-image: url('src/components/img/macos.jpg');
 }
 
 .ios {
-    background-image: url('/src/components/img/ios.avif');
+    background-image: url('src/components/img/ios.avif');
 }
 
 .win11 {
-    background-image: url('/src/components/img/win11.webp');
+    background-image: url('src/components/img/win11.webp');
 }
 
 .shad-right {
