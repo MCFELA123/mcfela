@@ -412,6 +412,7 @@ iframe {
     height: 3em;
     visibility: hidden;
     background: #fff;
+    border: 2px solid #648ebe20;
     box-shadow: 12px 0 1em -5px #648ebe30;
     left: 0;
     margin-top: 10em;
@@ -1403,7 +1404,12 @@ a {
         width: 100% !important;
     }
     .shad-right {
-        right: 2% !important;
+        right: 5% !important;
+    }
+    .shad-right .arrow-right-function {
+        transform: translateX(50%);
+        border: 1px solid #648ebe20;
+        box-shadow: 0 0 1em 0 #648ebe40;
     }
 }
 
@@ -1453,7 +1459,9 @@ a {
 
 @media(max-width:500px) {
     .typer {
-        transform: translateX(55%) !important;
+        transform: translateX(50%) !important;
+        opacity: .5 !important;
+        z-index: -99 !important;
     }
     .animated-card  {
         border-radius: 1em !important;
@@ -2026,8 +2034,8 @@ a {
 }
 
 .shad-right .arrow-right-function {
-    width: 2.2em;
-    height: 2.2em;
+    width: 2em;
+    height: 2em;
     border-radius: 3em;
     cursor: pointer;
     backdrop-filter: blur(2em);
