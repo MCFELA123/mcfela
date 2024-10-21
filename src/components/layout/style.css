@@ -643,7 +643,7 @@ iframe {
     height: 100%;
     transition: all .2s ease;
     background: #f5f8fb;
-    position: absolute;
+    position: fixed;
 }
 
 .d-sect-cus {
