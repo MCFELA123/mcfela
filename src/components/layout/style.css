@@ -853,7 +853,7 @@ a {
 
 @font-face {
     font-family: fontReg;
-    src: url(./src/fonts/SF-Pro-Rounded-Regular.otf) format('otf');
+    src: url(https://github.com/MCFELA123/mcfela/raw/main/src/fonts/SF-Pro-Rounded-Regular.otf) format('otf');
   }
   
   text {
@@ -863,7 +863,7 @@ a {
 
   @font-face {
     font-family: fontMed;
-    src: url(./src/fonts/SF-Pro-Rounded-Medium.otf) format('otf');
+    src: url(https://github.com/MCFELA123/mcfela/raw/main/src/fonts/SF-Pro-Rounded-Medium.otf) format('otf');
   }
   
   .font-medium {
@@ -873,7 +873,7 @@ a {
 
   @font-face {
     font-family: fontBold;
-    src: url(./src/fonts/SF-Pro-Rounded-Bold.otf) format('otf');
+    src: url(https://github.com/MCFELA123/mcfela/raw/main/src/fonts/SF-Pro-Rounded-Bold.otf) format('otf');
   }
   
   .bold {
@@ -882,7 +882,7 @@ a {
 
   @font-face {
     font-family: fontHaevy;
-    src: url(./src/fonts/SF-Pro-Rounded-Heavy.otf) format('otf');
+    src: url(https://github.com/MCFELA123/mcfela/raw/main/src/fonts/SF-Pro-Rounded-Heavy.otf) format('otf');
   }
   
   .heavy {
