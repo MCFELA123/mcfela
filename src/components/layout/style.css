@@ -1137,7 +1137,7 @@ a {
 .card-wel-char-2 {
     float: left;
     position: absolute;
-    right: 1.5em;
+    right: .8em;
     background: #648ebe20;
     height: 1.4em;
     width: 2.5em;
@@ -1475,6 +1475,9 @@ a {
         width: 35vmax !important;
         transform: translateX(8vmax);
         margin-top: 3.5em !important;
+    }
+    .card-guide:first-child {
+        margin-top: 1em !important;
     }
 }
 
