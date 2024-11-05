@@ -916,7 +916,7 @@ a {
     width: 100%;
     background: #fff;
     height: 100%;
-    box-shadow: 0 0 0 1em #00000010;
+    box-shadow: 0 0 0 1em #648ebe20;
     transform: translateX(-1px);
     /* z-index: 99; */
     transition: all .2s ease;
@@ -950,7 +950,7 @@ a {
 
 .header-title {
     width: 100%;
-    height: 7em;
+    height: 4.5em;
 }
 
 .header-title .card-title {
@@ -978,10 +978,11 @@ a {
 
 .card-items {
     width: 90%;
-    height: 2.4em;
+    height: 2.3em;
     margin: 0 auto;
-    margin-top: 5px;
-    border-radius: 7px;
+    margin-top: 7px;
+    border-radius: 5px;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
@@ -997,6 +998,7 @@ a {
     height: inherit;
     float: left;
     width: 50%;
+    text-indent: -2px;
 }
 
 .card-items .data-item text {
@@ -1005,19 +1007,43 @@ a {
 
 .card-items .data-item .img {
     opacity: .6;
-    transform: translateX(5px);
+    transform: translateX(0);
 }
 
 .card-items .data-item:first-child {
-    width: 25%;
+    width: 17%;
 }
 
 .card-items .data-item:last-child {
-    width: 25%;
+    width: 33%;
 }
 
 .card-items:hover {
-    opacity: 1 !important;
+    background: #648ebe20 !important;
+}
+
+.data-item-home {
+    /* background: #000; */
+    overflow: hidden;
+    height:0;
+    padding-top: 0;
+    transition: all .25s cubic-bezier(0.16, .25, 0.29, 0.99) 0s, background 0s ease 0s;
+}
+
+.data-item-projects {
+    /* background: #000; */
+    overflow: hidden;
+    height:0;
+    padding-top: 0;
+    transition: all .25s cubic-bezier(0.16, .25, 0.29, 0.99) 0s, background 0s ease 0s;
+}
+
+.data-item-arrow {
+    transition: all .25s cubic-bezier(0.16, .25, 0.29, 0.99) 0s, background 0s ease 0s;
+}
+
+.data-item-project-arrow {
+    transition: all .25s cubic-bezier(0.16, .25, 0.29, 0.99) 0s, background 0s ease 0s;
 }
 
 .right-side {
@@ -1029,8 +1055,8 @@ a {
     height: 1.3em;
     border-radius: 1em;
     /* box-shadow: 0 0 10px 0 #2c2c2ca1; */
-    background: #648ebe1d;
-    transform: translateX(-10px);
+    /* background: #0c2d57; */
+    transform: translateX(100%);
 }
 
 .card-message {
@@ -1476,6 +1502,9 @@ a {
         transform: translateX(8vmax);
         margin-top: 3.5em !important;
     }
+}
+
+@media(max-width:500px) {
     .card-guide:first-child {
         margin-top: 1em !important;
     }
@@ -2245,19 +2274,109 @@ a {
 
 .data-active {
     opacity: 1;
-    background: #648ebe10;
-    /* box-shadow: 0 1px 5px 1.5px #0077ff86;
-    border: 2px solid #648ebe05; */
+    background: #648ebe20;
+    /* box-shadow: 0 1px 5px 1.5px #0077ff86; */
+    /* border: 2px solid #648ebe05; */
 }
-/* 
-.data-active text {
+
+.data-item-active {
+    background: linear-gradient(to right, #0077ff, #479dff);
+    box-shadow: 0 .5px 5px 1.3px #0077ff71;
+    width: 90%;
+    height: 2.3em;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: all .2s ease;
+    cursor: pointer;
+    /* border: 2px solid #648ebe05; */
+}
+
+.data-item-active:hover {
+    background: linear-gradient(to right, #0077ff, #479dff) !important;
+}
+
+.data-item-active text {
     font-weight: 900 !important;
     color: #fff !important;
-    
-} */
+}
+
+.data-item-active svg {
+    stroke: #fff;
+}
+
+.data-item-active .data-item {
+    height: inherit;
+    float: left;
+    width: 50%;
+    text-indent: -2px;
+}
+
+.data-item-active .data-item text {
+    color: #4f678a;
+}
+
+.data-item-active .data-item .img {
+    opacity: .6;
+    transform: translateX(0);
+}
+
+.data-item-active .data-item:first-child {
+    width: 17%;
+}
+
+.data-item-active .data-item:last-child {
+    width: 33%;
+}
+
+.data-item-unactive {
+    width: 90%;
+    height: 2.3em;
+    margin: 0 auto;
+    margin-top: 7px;
+    border-radius: 5px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.data-item-unactive text {
+    font-weight: normal !important;
+    color: solid !important;
+}
+
+.data-item-unactive svg {
+    stroke: #4f678a;
+}
+
+.data-item-unactive .data-item {
+    height: inherit;
+    float: left;
+    width: 50%;
+    text-indent: -2px;
+}
+
+.data-item-unactive .data-item text {
+    color: #4f678a;
+}
+
+.data-item-unactive .data-item .img {
+    opacity: .6;
+    transform: translateX(0);
+}
+
+.data-item-unactive .data-item:first-child {
+    width: 17%;
+}
+
+.data-item-unactive .data-item:last-child {
+    width: 33%;
+}
+
+.data-item-unactive:hover {
+    background: #648ebe20 !important;
+}
 
 .data-unactive {
-    opacity: .5;
+    opacity: 1;
 }
 
 .d-center {
