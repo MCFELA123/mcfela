@@ -29,8 +29,31 @@
                         <div class="data-item d-align">
                             <text>Home</text>
                         </div>
+                        <div class="data-item d-center">
+                            <div class="card-more d-center">
+                                <img src="src/components/icons/arrow-down.svg" class="data-item-arrow" alt="fa-plus">
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-items data-unactive" onclick="frameProjects()">
+                    
+                    <div class="data-item-home">
+                        <div class="card-items d-sep data-item-active">
+                            <div class="data-item d-center">
+                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
+                            <div class="data-item d-align">
+                                <text>Dashboard</text>
+                            </div>
+                        </div>
+                        <div class="card-items d-sep data-item-unactive">
+                            <div class="data-item d-center">
+                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
+                            <div class="data-item d-align">
+                                <text>Overview</text>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-items data-unactive card3" onclick="frameProjects()">
                         <div class="data-item d-center">
                             <img class="img" src="src/components/icons/project.svg" alt="project">
                         </div>
@@ -39,10 +62,28 @@
                         </div>
                         <div class="data-item d-center">
                             <div class="card-more d-center">
-                                <img src="src/components/icons/add.svg" alt="fa-plus">
+                                <img src="src/components/icons/arrow-left3.svg" class="data-item-project-arrow" alt="fa-plus">
                             </div>
                         </div>
                     </div>
+
+                    <div class="data-item-projects">
+                        <div class="card-items d-sep data-item-unactive">
+                            <div class="data-item d-center">
+                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
+                            <div class="data-item d-align">
+                                <text>Portfolio</text>
+                            </div>
+                        </div>
+                        <div class="card-items d-sep data-item-unactive">
+                            <div class="data-item d-center">
+                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
+                            <div class="data-item d-align">
+                                <text>Shop</text>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="card-items data-unactive">
                         <div class="data-item d-center">
                             <img class="img" src="src/components/icons/team.svg" alt="team">
@@ -52,7 +93,7 @@
                         </div>
                         <div class="data-item d-center">
                             <div class="card-more d-center">
-                                <img src="src/components/icons/add.svg" alt="fa-plus">
+                                <img src="src/components/icons/arrow-left3.svg" alt="fa-plus">
                             </div>
                         </div>
                     </div>
@@ -159,7 +200,7 @@
                 </div>
                 <div class="page-indicator-container d-center">
                     <div class="page-indicator">
-                        <a href="#/index.html">
+                        <a href="#/index.html" onclick="frameHome()">
                             <div class="indicator d-center">
                                 <text id="indicator1">Home</text>
                             </div>
@@ -242,98 +283,7 @@
                 </div>
                 <div class="block" onclick="hideMenu()" id="block"></div>
                 <div class="side-media" id="side-bar">
-                    <div class="header-title">
-                        <div class="card-header">
-                            <div class="card-title d-center">
-                                <img src="src/components/icons/favico/favicon.png" width="40" alt="favicon">
-                            </div>
-                            <div class="card-title d-align">
-                                <text class="bold fs-12 col-blue-grad">mcfela</text>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pager-items">
-                        <div class="card-items data-active" onclick="frameHome()">
-                            <div class="data-item d-center">
-                                <img class="img" src="src/components/icons/home.svg" alt="home">
-                            </div>
-                            <div class="data-item d-align">
-                                <text>Home</text>
-                            </div>
-                        </div>
-                        <div class="card-items data-unactive" onclick="frameProjects()">
-                            <div class="data-item d-center">
-                                <img class="img" src="src/components/icons/project.svg" alt="project">
-                            </div>
-                            <div class="data-item d-align">
-                                <text>Projects</text>
-                            </div>
-                            <div class="data-item d-center">
-                                <div class="card-more d-center">
-                                    <img src="src/components/icons/add.svg" alt="fa-plus">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-items data-unactive">
-                            <div class="data-item d-center">
-                                <img class="img" src="src/components/icons/team.svg" alt="team">
-                            </div>
-                            <div class="data-item d-align">
-                                <text>Team</text>
-                            </div>
-                            <div class="data-item d-center">
-                                <div class="card-more d-center">
-                                    <img src="src/components/icons/add.svg" alt="fa-plus">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-items data-unactive">
-                            <div class="data-item d-center">
-                                <img class="img" src="src/components/icons/settings.svg" alt="settings">
-                            </div>
-                            <div class="data-item d-align">
-                                <text>Settings</text>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-message d-center">
-                        <div class="data-message">
-                            <text class="fs-10 bold col-white">Upgrade to Pro</text>
-                            <br>
-                            <div class="transY-1">
-                                <text class="fs-8 lnh-10 col-light-grey">Get 1 month free <br> and unlock</text>
-                            </div><br>
-                            <button class="btn-upgrade">
-                                <text class="fs-10 bold">Upgrade</text>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="bottom-pager">
-                        <div class="card-items card-bottom">
-                            <div class="data-item d-center">
-                                <img class="img" src="src/components/icons/help.svg" alt="help">
-                            </div>
-                            <div class="data-item d-align">
-                                <text>FAQ</text>
-                            </div>
-                            <div class="data-item d-center">
-                                <div class="card-more bg-unset d-center">
-                                    <img src="src/components/icons/bulb.svg" alt="fa-bulb">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-items card-bottom">
-                            <div class="data-item d-center">
-                                <img class="img" src="src/components/icons/logout.svg" alt="Logout">
-                            </div>
-                            <div class="data-item d-align">
-                                <text>Log out</text>
-                            </div>
-                            <div class="data-item d-center">
-                                <div class="card-more bg-unset d-center"></div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </section>
         </div>
@@ -415,29 +365,80 @@
  function frameProjects() {
     var frame = document.getElementById('frame')
     var indicator = document.getElementById('indicator2')
-var indicator3 = document.getElementById('indicator3')
-var card0 = document.getElementsByClassName('card-items')[0]
+    var indicator3 = document.getElementById('indicator3')
+    var card0 = document.getElementsByClassName('card-items')[0]
     var card1 = document.getElementsByClassName('card-items')[1]
     var card2 = document.getElementsByClassName('card-items')[2]
     var card3 = document.getElementsByClassName('card-items')[3]
-frame.style.scale = 1.03
-frame.style.opacity = 0
+    var card4 = document.getElementsByClassName('card-items')[4]
+    var card5 = document.getElementsByClassName('card-items')[5]
 
-
-if(card1.click) {
-        card0.style.background = 'unset'
-            card1.style.background = '#648ebe10'
-    card0.style.opacity = .5
-    card1.style.opacity = 1
-    card2.style.opacity = .5
-    card3.style.opacity = .5
-}
+        var dsep0 = document.getElementsByClassName('d-sep')[2]
+            var dsep1 = document.getElementsByClassName('d-sep')[3]
 
 setTimeout(() => {
+    dsep0.onclick=function(){
+        const data_item_home = document.querySelector('.data-item-home')
+        const data_item_arrow = document.querySelector('.data-item-arrow')
+    dsep0.className = 'data-item-active'
+    dsep1.style.marginTop='7px'
+        dsep1.className='data-item-unactive'
+        data_item_home.style.height=0
+data_item_home.style.paddingTop=0
+data_item_arrow.style.rotate='-90deg'
+card0.style.background='unset'
+// document.getElementsByClassName('d-sep')[0].className='data-item-unactive'
+// document.getElementsByClassName('d-sep')[0].style.marginTop=0
+        frameShop()
+}
+dsep1.onclick=function() {
+    const data_item_home = document.querySelector('.data-item-home')
+    const data_item_arrow = document.querySelector('.data-item-arrow')
+    dsep1.className = 'data-item-active'
+    dsep0.style.marginTop=0
+        dsep1.style.marginTop='7px'
+        dsep0.className='data-item-unactive'
+        data_item_home.style.height=0
+data_item_home.style.paddingTop=0
+data_item_arrow.style.rotate='-90deg'
+card0.style.background='unset'
+        frameShop()
+}
+}, 0);
+
+    const data_item_projects = document.querySelector('.data-item-projects')
+    const data_item_arrow = document.querySelector('.data-item-project-arrow')
+    const card_3 = document.querySelector('.card3')
+
+if (card_3.style.background==='#648ebe20',
+    data_item_projects.style.height==='5.2em',
+data_item_projects.style.paddingTop==='5px',
+data_item_arrow.style.rotate==='90deg'
+){
+data_item_projects.style.height=0
+data_item_projects.style.paddingTop=0
+data_item_arrow.style.rotate='0deg'
+  card_3.style.background='unset'
+
+    } else {
+        data_item_projects.style.height='5.2em'
+        data_item_projects.style.paddingTop='5px'
+        data_item_arrow.style.rotate='90deg'
+          card_3.style.background='#648ebe20'
+    }
+
+}
+function frameShop() {
+    var frame = document.getElementById('frame')
+    var indicator = document.getElementById('indicator2')
+    var indicator3 = document.getElementById('indicator3')
+    frame.style.scale = 1.03
+frame.style.opacity = 0
+    setTimeout(() => {
     frame.src='projects.html'
     frame.style.scale = .97
         indicator.innerHTML='Projects'
-    indicator3.innerHTML='Shop'
+        indicator3.innerHTML='Shop'
 frame.style.opacity = 0
 }, 500);
 setTimeout(() => {
@@ -447,6 +448,14 @@ frame.style.opacity = 1
 hideMenu()
 }
 
+window.onload=frameHome()
+
+window.onload=function() {
+    
+    setTimeout(() => {
+        document.querySelector('.side-media').innerHTML=document.querySelector('.side-react').innerHTML
+    }, 0);
+}
 function frameHome() {
     var frame = document.getElementById('frame')
     var indicator = document.getElementById('indicator2')
@@ -455,20 +464,70 @@ function frameHome() {
     var card1 = document.getElementsByClassName('card-items')[1]
     var card2 = document.getElementsByClassName('card-items')[2]
     var card3 = document.getElementsByClassName('card-items')[3]
-frame.style.scale = 1.03
-frame.style.opacity = 0
+    var card4 = document.getElementsByClassName('card-items')[4]
+    var card5 = document.getElementsByClassName('card-items')[5]
 
-
-if(card0.click) {
-        card1.style.background = 'unset'
-            card0.style.background = '#648ebe10'
-    card0.style.opacity = 1
-    card1.style.opacity = .5
-    card2.style.opacity = .5
-    card3.style.opacity = .5
-}
+        var dsep0 = document.getElementsByClassName('d-sep')[0]
+            var dsep1 = document.getElementsByClassName('d-sep')[1]
 
 setTimeout(() => {
+    dsep0.onclick=function(){
+        const data_item_projects = document.querySelector('.data-item-projects')
+        const data_item_arrow = document.querySelector('.data-item-project-arrow')
+    dsep0.className = 'data-item-active'
+    dsep1.style.marginTop='7px'
+        dsep1.className='data-item-unactive'
+        frameDash()
+        data_item_projects.style.height=0
+data_item_projects.style.paddingTop=0
+data_item_arrow.style.rotate='-0deg'
+card3.style.background='unset'
+}
+dsep1.onclick=function() {
+    const data_item_projects = document.querySelector('.data-item-projects')
+    const data_item_arrow = document.querySelector('.data-item-project-arrow')
+    dsep1.className = 'data-item-active'
+    dsep0.style.marginTop=0
+        dsep1.style.marginTop='7px'
+        dsep0.className='data-item-unactive'
+        frameDash()
+        data_item_projects.style.height=0
+data_item_projects.style.paddingTop=0
+data_item_arrow.style.rotate='-0deg'
+card3.style.background='unset'
+}
+}, 0);
+
+    const data_item_home = document.querySelector('.data-item-home')
+    const data_item_arrow = document.querySelector('.data-item-arrow')
+
+if (data_item_home.style.height==='5.2em',
+data_item_home.style.paddingTop==='5px',
+data_item_arrow.style.rotate==='0deg'
+){
+        data_item_home.style.height=0
+data_item_home.style.paddingTop=0
+data_item_arrow.style.rotate='-90deg'
+    } else {
+        data_item_home.style.height='5.2em'
+        data_item_home.style.paddingTop='5px'
+        data_item_arrow.style.rotate='0deg'
+    }
+
+if(card0.click) {
+    card0.style.background = '#648ebe20'
+    card3.style.background = 'unset'
+}
+
+// data-item-unactive
+}
+function frameDash() {
+    var frame = document.getElementById('frame')
+    var indicator = document.getElementById('indicator2')
+    var indicator3 = document.getElementById('indicator3')
+    frame.style.scale = 1.03
+frame.style.opacity = 0
+    setTimeout(() => {
     frame.src='dashboard.html'
     frame.style.scale = .97
         indicator.innerHTML='Dashboard'
