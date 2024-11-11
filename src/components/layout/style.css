@@ -505,7 +505,7 @@ iframe {
     box-shadow: 0 0 12px 0 #648ebe30;
 }
 
-@media(max-width:1000px) {
+@media(max-width:980px) {
     .card-product {
         width: 45% !important;
         margin-left: 3.5% !important;
@@ -614,11 +614,11 @@ iframe {
 }
 
 .d-container .project-container .card-project .search-bar .search-char {
-    width: 88%;
+    width: 89%;
 }
 
 .d-container .project-container .card-project .search-bar .search-char:first-child {
-    width: 6%;
+    width: 5%;
 }
 
 .d-container .project-container .card-project .search-bar .search-char:last-child {
@@ -737,7 +737,7 @@ iframe {
 
 .checklist:active {
     background: #0059ff;
-    box-shadow: 0 1.5px 3.5px 0 #226fff;
+    box-shadow: 0 1.5px 3.5px 0 #226fff00 !important;
 }
 
 .range-slider {
@@ -892,6 +892,16 @@ a {
   
   .heavy {
     font-family: fontHaevy;
+  }
+
+  @font-face {
+    font-family: fontLight;
+    src: url(/src/fonts/SF-Pro-Rounded-Light.otf);
+  }
+  
+  .light {
+    font-family: fontLight;
+    font-size: .95em;
   }
 
   br, img {
@@ -1146,6 +1156,10 @@ a {
     }
 }
 
+.top-search {
+    transform: translateX(10%);
+}
+
 @media(max-width:570px){
     .right-ash {
         display: none;
@@ -1308,12 +1322,12 @@ a {
 }
 
 .btn-primary {
-    height: 2.5em;
-    padding-left: .7em;
-    padding-right: .7em;
+    height: 2.3em;
+    padding-left: .6em;
+    padding-right: .6em;
     border: none;
     background: #004cff;
-    border-radius: 9px;
+    border-radius: 8px;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -1322,27 +1336,58 @@ a {
 
 .search-bar {
     float: left;
-    width: 15em;
+    width: 10em;
     height: 2.2em;
-    border-radius: 8px;
+    border-radius: 9px;
     margin-right: 1em;
     overflow: hidden;
-    background: #648ebe15;
-    box-shadow: 0 0 0 1px #24539a14;
+    background: #648ebe10;
+}
+
+.span-label {
+    position: absolute;
+    background: red;
+    padding-top: 1px;
+    border-radius: 1em;
+    transform: translateX(.8em) translateY(-11px);
+    box-shadow: 0 0 7px 0 #648ebe95;
+    padding-bottom: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    opacity: 1 !important;
+}
+
+.span-label text {
+    font-size: smaller;
+}
+
+.ctrl-click {
+    width: 75%;
+    height: 55%;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px #648ebe40;
+}
+
+.ctrl-click text {
+    font-size: small;
+    scale: .9;
+    font-family: "Inter", sans-serif;
+    color: #335174e0;
 }
 
 .search-bar .search-char {
-    width: 74%;
+    width: 42%;
     height: 100%;
     float: left;
 }
 
 .search-bar .search-char:first-child {
-    width: 13%;
+    width: 17%;
 }
 
 .search-bar .search-char:last-child {
-    width: 13%;
+    width: 41%;
+    padding-right: 0%;
 }
 
 .search-bar .search-char input[type=text] {
@@ -1352,25 +1397,28 @@ a {
     font-family: fontMed;
     background: unset;
     border: none;
-    color: #4f678a;
+    color: #335174e0;
 }
 
 .search-bar .search-char input[type=text]::placeholder {
     transform: translateY(.8px);
-    color: #4f678a;
-    opacity: .5;
+    color: #335174e0;
+    font-family: fontLight;
+    font-weight: 500 !important;
 }
 
 .start-link {
     height: 2.15em;
-    border-radius: 9px;
-    margin-right: .5em;
+    width: 2.15em;
+    margin-top: 1.5px;
+    border-radius: 3em;
     float: left;
     /* background: #648ebe15; */
     overflow: hidden;
     box-shadow: none;
     cursor: pointer;
     border: none;
+    transition: all .15s ease;
 }
 
 .start-link main {
@@ -1380,20 +1428,12 @@ a {
     border: none !important;
 }
 
-.start-link main:first-child {
-    width: 2em;
-}
-
-.start-link main:last-child {
-    padding-right: 10px;
-}
-
 .start-link:last-child {
     margin-right: 1em;
 }
 
 .start-link:hover {
-    background: #648ebe15;
+    background: #648ebe13;
 }
 
 .user-profile {
@@ -1895,6 +1935,10 @@ a {
     transform: translateY(-1.5px);
 }
 
+.right-absolute .btn-primary {
+    transform: translateY(2.5px);
+}
+
 .h-unset {
     height: unset;
 }
@@ -2080,8 +2124,6 @@ a {
     height: 2.5em !important;
 }
 
-
-
 .block {
     position: absolute;
     top: 0;
@@ -2098,7 +2140,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 15em;
+    width: 17em;
     overflow-y: scroll;
     height: inherit;
     transform: translateX(-100%);
