@@ -158,13 +158,6 @@
                                 <text class="bold fs-large">Good evening,</text>
                             <text class="fs-12 col-blue bold fs-larger">Alex</text>
                             </div>
-                        </div>
-                        <div class="right-absolute right-ash">
-                            <button class="btn-primary">
-                                <text class="">
-                                    Get Started
-                                </text>
-                            </button>
                             <div class="search-bar top-search">
                                 <div class="search-char d-center">
                                     <img src="src/components/icons/search.svg" alt="fa-search">
@@ -173,23 +166,36 @@
                                     <input type="text" placeholder="Search">
                                 </div>
                                 <div class="search-char d-center">
-                                    <img src="src/components/icons/cmd.svg" alt="fa-cmd">
+                                    <div class="ctrl-click d-center">
+                                        <text class="">CTRL K</text>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="start-link">
+                        </div>
+                        <div class="right-absolute right-ash">
+                            <button class="btn-primary">
+                                <text class="">
+                                    Get Started
+                                </text>
+                            </button>
+                            <div class="start-link d-center">
                                 <main class="d-center">
-                                    <img src="src/components/icons/chart.svg" alt="fa-chart">
-                                </main>
-                                <main class="d-align">
-                                    <text class="font-medium col-grey">Portfolio</text>
+                                    <img src="src/components/icons/lang.svg" alt="fa-language">
                                 </main>
                             </div>
-                            <div class="start-link">
+                            <div class="start-link d-center">
                                 <main class="d-center">
-                                    <img src="src/components/icons/star.svg" alt="fa-star">
+                                    <img src="src/components/icons/sun.svg" alt="fa-sun">
                                 </main>
-                                <main class="d-align">
-                                    <text class="font-medium col-grey">Cart</text>
+                            </div>
+                            <div class="start-link d-center">
+                                <main class="d-center">
+                                    <img src="src/components/icons/apps.svg" alt="fa-apps">
+                                </main>
+                            </div>
+                            <div class="start-link d-center">
+                                <main class="d-center">
+                                    <img src="src/components/icons/bell.svg" alt="fa-bell">
                                 </main>
                             </div>
                         </div>
@@ -306,6 +312,9 @@
             <div class="mg-auto">
                 <div class="card-nav" onclick="frameDash()">
                     <div class="n-00 d-center">
+                        <div class="span-label">
+                            <text class="col-white ltsp-01">+3</text>
+                        </div>
                         <img src="src/components/icons/home2.svg" alt="fa-home">
                     </div>
                     <div class="n-00 d-center">
@@ -314,6 +323,9 @@
                 </div>
                 <div class="card-nav" onclick="frameShop()">
                     <div class="n-00 d-center">
+                        <div class="span-label">
+                            <text class="col-white ltsp-01">+5</text>
+                        </div>
                         <img src="src/components/icons/project.svg" width="23" alt="fa-home">
                     </div>
                     <div class="n-00 d-center">
@@ -340,6 +352,14 @@
         </div>
     </nav>
     <script>
+        window.onload=frameHome()
+
+window.onload=function() {
+    
+    setTimeout(() => {
+        document.querySelector('.side-media').innerHTML=document.querySelector('.side-react').innerHTML
+    }, 0);
+}
  function menu() {
     var side_bar = document.getElementById("side-bar")
     var block = document.getElementById("block")
@@ -448,14 +468,6 @@ frame.style.opacity = 1
 hideMenu()
 }
 
-window.onload=frameHome()
-
-window.onload=function() {
-    
-    setTimeout(() => {
-        document.querySelector('.side-media').innerHTML=document.querySelector('.side-react').innerHTML
-    }, 0);
-}
 function frameHome() {
     var frame = document.getElementById('frame')
     var indicator = document.getElementById('indicator2')
