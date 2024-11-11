@@ -1354,7 +1354,7 @@ a {
 
 .span-label {
     position: absolute;
-    background: red;
+    background: #004cff;
     padding-top: 1px;
     border-radius: 1em;
     transform: translateX(.8em) translateY(-11px);
