@@ -887,7 +887,7 @@ a {
 
 @font-face {
     font-family: fontReg;
-    src: url(../src/fonts/SF-Pro-Rounded-Regular.otf);
+    src: url(/src/fonts/SF-Pro-Rounded-Regular.otf);
   }
   
   text {
@@ -897,7 +897,7 @@ a {
 
   @font-face {
     font-family: fontMed;
-    src: url(../src/fonts/SF-Pro-Rounded-Medium.otf);
+    src: url(/src/fonts/SF-Pro-Rounded-Medium.otf);
   }
   
   .font-medium {
@@ -907,7 +907,7 @@ a {
 
   @font-face {
     font-family: fontBold;
-    src: url(../src/fonts/SF-Pro-Rounded-Bold.otf);
+    src: url(/src/fonts/SF-Pro-Rounded-Bold.otf);
   }
   
   .bold {
@@ -916,7 +916,7 @@ a {
 
   @font-face {
     font-family: fontHaevy;
-    src: url(../src/fonts/SF-Pro-Rounded-Heavy.otf);
+    src: url(/src/fonts/SF-Pro-Rounded-Heavy.otf);
   }
   
   .heavy {
@@ -925,7 +925,7 @@ a {
 
   @font-face {
     font-family: fontLight;
-    src: url(../src/fonts/SF-Pro-Rounded-Light.otf);
+    src: url(/src/fonts/SF-Pro-Rounded-Light.otf);
   }
   
   .light {
@@ -969,11 +969,15 @@ a {
     .layout-container .container:first-child {
         width: 0;
     }
+    .goof {
+        transform: translateX(7%);
+    }    
     .layout-container .container:last-child {
         width: 100% !important;
     }
     .welcome-char .card-wel-char:first-child {
         display: flex !important;
+        margin-left: -1.5%;
     }
     .welcome-char .card-wel-char:last-child {
         padding-left: 1em !important;
@@ -1358,9 +1362,6 @@ a {
     padding-left: 0;
 }
 
-.goof {
-    transform: translateX(7%);
-}
 
 .btn-primary {
     height: 2.3em;
