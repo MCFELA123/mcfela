@@ -47,7 +47,7 @@
                             </div>
                             <br><div class="br-list br-first">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist active"></div>
+                                    <div class="checklist active toggle-all"></div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium">All</text>
@@ -55,7 +55,7 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist toggle-less-equal-100"></div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium"><= $10 </text>
@@ -63,7 +63,7 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist toggle-10-500"></div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium">$10 - $100</text>
@@ -71,7 +71,7 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist toggle-100-500"></div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium">$100 - $500</text>
@@ -125,7 +125,7 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist toggle-paid"></div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">Paid</text>
@@ -249,7 +249,6 @@
                     </div>
                     <br><br>
                     <div id="product-items" class="myclass" hidden>
-
                     </div>
                     <div class="search-bar product-search">
                         <div class="search-char d-center">
@@ -264,8 +263,8 @@
                 </div>
                 <br><br>
                 <div class="product-container" id="product-container">
-                    <a href="#product-sonoma.html" class="a">
-                        <div class="card-product" onclick="productSonoma()">
+                    <a class="all keyword-m keyword-a keyword-c keyword-so keyword-s keyword-b keyword-be keyword-t keyword-ta paid p100-500" hidden href="#product-sonoma.html">
+                        <div class="card-product">
                                 <div class="cd-p0 d-center">
                                     <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
                                 </div>
@@ -289,30 +288,19 @@
                                     </div>
                                 </div>
                                 <div class="cd-p01">
-                                    <div class="card-p01 d-center">
-                                        <div class="p01 d-center">
-                                            <img src="src/components/icons/heart.svg" width="16" alt="heart">
-                                        </div>
-                                        <div class="p01 d-align">
-                                            <text class="col-dark-grey-5 font-medium">Wishlist</text>
-                                        </div>
-                                    </div>
-                                    <div class="card-p01 d-center">
-                                        <div class="p01 d-center">
-                                            <img src="src/components/icons/cart-3.svg" alt="fa-bag">
-                                        </div>
-                                        <div class="p01 d-align">
-                                            <text class="col-white font-medium">Add to cart</text>
+                                    <div class="card-p01 d-center w100-important bg-unset">
+                                        <div class="d-center w100-important">
+                                            <text class="col-blue font-medium">Coming soon</text>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             </a>
-                            <a href="#product-webos.html" class="a">
-                                <div class="card-product" onclick="productWebOS()">
+                            <a class="all keyword-v keyword-d keyword-da keyword-dash keyword-sh keyword-u keyword-ui keyword-ve paid p10-100" hidden href="#product-webos.html">
+                                <div class="card-product" onclick="productVenus()">
                                     <div class="cd-p0 d-center">
 
-                                        <img width="150" src="src/components/img/product icons/webos.avif" alt="">
+                                        <img width="185" class="br-10" src="src/components/img/product icons/Venus.webp" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -324,12 +312,12 @@
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-dark-grey-5">$399.99</text>
+                                                <text class="col-dark-grey-5">$33.99</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">weOS 6.0 beta</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                            <text class="col-dark-grey-5cs rem">Venus dashboard UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, Venus is a responsive..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -353,11 +341,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a class="all paid p10-100" hidden href="#">
                                 <div class="card-product">
                                     <div class="cd-p0 d-center">
 
-                                        <img width="150" src="src/components/img/product icons/windows.png" alt="">
+                                        <img width="185" src="src/components/img/product icons/vision ui.png" class="br-10" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -369,11 +357,11 @@
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-dark-grey-5">$229.99</text>
+                                                <text class="col-dark-grey-5">$95.99</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">Windows beta</text>
+                                            <text class="col-dark-grey-5cs rem">Vision UI dashboard</text>
                                             <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
                                            </div>
                                         </div>
@@ -398,7 +386,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a class="all paid" hidden href="#">
                                 <div class="card-product">
                                     <div class="cd-p0 d-center">
 
@@ -414,7 +402,7 @@
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-dark-grey-5">$599.99</text>
+                                                <text class="col-blue">Free</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
@@ -424,46 +412,35 @@
                                         </div>
                                     </div>
                                     <div class="cd-p01">
-                                        <div class="card-p01 d-center">
-                                            <div class="p01 d-center">
-                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
-                                            </div>
-                                            <div class="p01 d-align">
-                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
-                                            </div>
-                                        </div>
-                                        <div class="card-p01 d-center">
-                                            <div class="p01 d-center">
-                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
-                                            </div>
-                                            <div class="p01 d-align">
-                                                <text class="col-white font-medium">Add to cart</text>
+                                        <div class="card-p01 d-center w100-important bg-unset">
+                                            <div class="d-center w100-important">
+                                                <text class="col-blue font-medium">Coming soon</text>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
-                                <div class="card-product">
+                            <a class="all" hidden href="#">
+                                <div class="card-product" onclick="productTopicListing()">
                                     <div class="cd-p0 d-center">
 
-                                        <img width="150" src="src/components/img/product icons/des.avif" class="br-10" alt="">
+                                        <img width="185" src="src/components/img/product icons/topiclisting.jpg" class="br-10" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
                                             <div class="left">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-dark-grey-5">$159.99</text>
+                                                <text class="col-dark-grey-5">$33.99</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">Workout App</text>
+                                            <text class="col-dark-grey-5cs rem">Topic listing Template</text>
                                             <br><text class="col-dark-grey-5cv fs-small">Made with pure html and css, see wh..</text>
                                            </div>
                                         </div>
@@ -488,11 +465,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a class="all" hidden href="#">
                                 <div class="card-product">
                                     <div class="cd-p0 d-center">
 
-                                        <img width="180" class="br-10" src="src/components/img/product icons/des1.jpg" alt="">
+                                        <img width="185" class="br-10" src="src/components/img/product icons/Materio.png" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -508,8 +485,8 @@
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">Dashboard UI</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                            <text class="col-dark-grey-5cs rem">Materio  dashboard UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Classic dashboard made with react, it comes with responsive layout de..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -533,11 +510,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a class="all" hidden href="#">
                                 <div class="card-product">
                                     <div class="cd-p0 d-center">
 
-                                        <img width="180" class="br-10" src="src/components/img/product icons/des2.png" alt="">
+                                        <img width="185" class="br-10" src="src/components/img/product icons/skydash.png" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -549,12 +526,12 @@
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-dark-grey-5">$79.99</text>
+                                                <text class="col-blue">free</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">Contact list UI</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                            <text class="col-dark-grey-5cs rem">Sky dashboard UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Built with Bootstrap, HTML & CSS, It employs a..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -578,109 +555,63 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a class="all" hidden href="#">
                                 <div class="card-product">
                                     <div class="cd-p0 d-center">
 
-                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                        <img width="185" class="br-10" src="src/components/img/product icons/adminmart-1.jpg" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
                                             <div class="left">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-dark-grey-5">$15.99</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">Adminart dashboard UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Built with pure HTML and CSS, see what its..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="all" hidden href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+                                        <img width="185" class="br-10" src="src/components/img/product icons/Horizon-UI.png" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
-                                            </div>
-                                            <div class="right">
-                                                <text class="col-dark-grey-5">$159.99</text>
-                                            </div>
-                                            <br><br>
-                                           <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
-                                           </div>
-                                        </div>
-                                    </div>
-                                    <div class="cd-p01">
-                                        <div class="card-p01 d-center">
-                                            <div class="p01 d-center">
-                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
-                                            </div>
-                                            <div class="p01 d-align">
-                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
-                                            </div>
-                                        </div>
-                                        <div class="card-p01 d-center">
-                                            <div class="p01 d-center">
-                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
-                                            </div>
-                                            <div class="p01 d-align">
-                                                <text class="col-white font-medium">Add to cart</text>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-product">
-                                    <div class="cd-p0 d-center">
-
-                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
-                                    </div>
-                                    <div class="cd-p0">
-                                        <div class="cd-after">
-                                            <div class="left">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
-                                            </div>
-                                            <div class="right">
-                                                <text class="col-dark-grey-5">$159.99</text>
-                                            </div>
-                                            <br><br>
-                                           <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
-                                           </div>
-                                        </div>
-                                    </div>
-                                    <div class="cd-p01">
-                                        <div class="card-p01 d-center">
-                                            <div class="p01 d-center">
-                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
-                                            </div>
-                                            <div class="p01 d-align">
-                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
-                                            </div>
-                                        </div>
-                                        <div class="card-p01 d-center">
-                                            <div class="p01 d-center">
-                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
-                                            </div>
-                                            <div class="p01 d-align">
-                                                <text class="col-white font-medium">Add to cart</text>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-product">
-                                    <div class="cd-p0 d-center">
-
-                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
-                                    </div>
-                                    <div class="cd-p0">
-                                        <div class="cd-after">
-                                            <div class="left">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
@@ -688,8 +619,8 @@
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                            <text class="col-dark-grey-5cs rem">Horizon UI ⚡️</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Built with reactJS and vueJS, see what it looks..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -713,28 +644,27 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a class="all" hidden href="#">
                                 <div class="card-product">
                                     <div class="cd-p0 d-center">
-
-                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                        <img width="150" src="src/components/img/product icons/list-ui.webp" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
                                             <div class="left">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
-                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-dark-grey-5">$159.99</text>
+                                                <text class="col-blue">Free</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                            <text class="col-dark-grey-5cs rem">List UI Design</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Not exaclty a template, just a code that can be helpful..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -758,11 +688,56 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="d">
+                            <a class="all" hidden href="#">
                                 <div class="card-product">
                                     <div class="cd-p0 d-center">
 
-                                        <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                        <img width="185" class="br-10" src="src/components/img/product icons/mobile.gif" alt="">
+                                    </div>
+                                    <div class="cd-p0">
+                                        <div class="cd-after">
+                                            <div class="left">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                            </div>
+                                            <div class="right">
+                                                <text class="col-blue">Free</text>
+                                            </div>
+                                            <br><br>
+                                           <div class="resm">
+                                            <text class="col-dark-grey-5cs rem">Mobile app UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Multiple mobile design alternatives which might be..</text>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd-p01">
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                            </div>
+                                        </div>
+                                        <div class="card-p01 d-center">
+                                            <div class="p01 d-center">
+                                                <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                            </div>
+                                            <div class="p01 d-align">
+                                                <text class="col-white font-medium">Add to cart</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="all" hidden href="#">
+                                <div class="card-product">
+                                    <div class="cd-p0 d-center">
+
+                                        <img width="150" src="src/components/img/product icons/digital-clock.png" alt="">
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -774,12 +749,12 @@
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-dark-grey-5">$159.99</text>
+                                                <text class="col-blue">Free</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                            <text class="col-dark-grey-5cs rem">Digital Clock UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">A minimal clock design built with HTML CSS & JA..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -804,11 +779,10 @@
                                 </div>
                             </a>
                 </div>
-
                 </div>
                 <div class="product-container op-0">
                     <div class="card-product">
-                        <br><br>lost
+                        <br><br><br><br><br><br><br><br>
                     </div>
                     <div class="card-product">
                         <br>
@@ -832,6 +806,73 @@
     </div>
     <iframe src="" frameborder="0" class="product-frame" id="frame"></iframe>
     <script>
+const togglePaid = document.querySelectorAll('.paid')
+
+    document.querySelector('.toggle-paid').addEventListener('click',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+togglePaid.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}, 1000);
+})
+
+const toggleAll = document.querySelectorAll('.all')
+document.querySelector('.toggle-all').addEventListener('click',function(){
+    // document.querySelector('.d-container').setAttribute('style','overflow:hidden')
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+toggleAll.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}, 1000);
+})
+
+const toggleLessEqual100 = document.querySelectorAll('.less-than-or-equal-to-100')
+document.querySelector('.toggle-less-equal-100').addEventListener('click',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+toggleLessEqual100.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}, 1000);
+})
+
+const toggle10_500 = document.querySelectorAll('.p10-100')
+document.querySelector('.toggle-10-500').addEventListener('click',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+toggle10_500.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}, 1000);
+})
+
+const toggle100_500 = document.querySelectorAll('.p100-500')
+document.querySelector('.toggle-100-500').addEventListener('click',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+toggle100_500.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}, 1000);
+})
+
  function productSonoma() {
     var frame = document.getElementById('frame')
     var project = document.getElementById('project')
@@ -851,7 +892,7 @@ frame.style.visibility = 'visible'
 }, 500);
 }
 
-function productWebOS() {
+function productVenus() {
     var frame = document.getElementById('frame')
     var project = document.getElementById('project')
 project.style.scale = 1.03
@@ -863,18 +904,41 @@ setTimeout(() => {
 }, 100);
 
 setTimeout(() => {
-    frame.src='product-webos.html'
+    frame.src='product-venus.html'
     frame.style.scale = 1
 frame.style.opacity = 1
 frame.style.visibility = 'visible'
 }, 500);
 }
 
+function productTopicListing() {
+    var frame = document.getElementById('frame')
+    var project = document.getElementById('project')
+project.style.scale = 1.03
+project.style.opacity = 0
+project.style.visibility = 'hidden'
 
+setTimeout(() => {
+    frame.style.zIndex = 1
+}, 100);
+
+setTimeout(() => {
+    frame.src='product-topic-listing.html'
+    frame.style.scale = 1
+frame.style.opacity = 1
+frame.style.visibility = 'visible'
+}, 500);
+}
+
+const allProducts = document.querySelectorAll('.all')
     window.onload = function(){
         document.querySelector(".d-sects").style.visibility = "hidden";
         document.querySelector(".d-sects").style.opacity = 0
-    }
+
+allProducts.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}
 
         let rangeMin = 100;
 const range = document.querySelector(".range-selected");

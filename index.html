@@ -154,22 +154,9 @@
                             <div class="card-wel-char d-center" onclick="menu()">
                                 <img src="src/components/icons/project.svg" alt="fa-sidebar">
                             </div>
-                            <div class="card-wel-char">
+                            <div class="card-wel-char goof">
                                 <text class="bold fs-large">Good evening,</text>
                             <text class="fs-12 col-blue bold fs-larger">Alex</text>
-                            </div>
-                            <div class="search-bar top-search">
-                                <div class="search-char d-center">
-                                    <img src="src/components/icons/search.svg" alt="fa-search">
-                                </div>
-                                <div class="search-char">
-                                    <input type="text" placeholder="Search">
-                                </div>
-                                <div class="search-char d-center">
-                                    <div class="ctrl-click d-center">
-                                        <text class="">CTRL K</text>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="right-absolute right-ash">
@@ -178,6 +165,21 @@
                                     Get Started
                                 </text>
                             </button>
+                            <div class="start-link search-start d-center">
+                                <div class="search-bar top-search br-full">
+                                    <div class="search-char d-center">
+                                        <img src="src/components/icons/search.svg" alt="fa-search">
+                                    </div>
+                                    <div class="search-char">
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                    <div class="search-char d-center">
+                                        <div class="ctrl-click d-center">
+                                            <text class="">CTRL K</text>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="start-link d-center">
                                 <main class="d-center">
                                     <img src="src/components/icons/lang.svg" alt="fa-language">
@@ -230,7 +232,7 @@
                     </div>
                 </div>
                 <div class="d-sect"></div>
-                <iframe src="dashboard.html" frameborder="0" id="frame"></iframe>
+                <iframe src="product-topic-listing.html" frameborder="0" id="frame"></iframe>
             </section>
             <section class="right-side">
                 <div class="user-profile d-center">
@@ -296,6 +298,31 @@
     </div>
     <nav class="media-nav">
         <div class="nav d-center">
+            <div class="d-center nav-control">
+                <div class="card-nav-control d-center">
+                    <svg width="25" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-arrow-down nav-arrow" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1190</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M2.16,6.246 C2.385,6.246 2.61,6.308 2.81,6.442 L9.039,10.598 L15.076,6.401 C15.617,6.042 16.346,6.188 16.705,6.729 C17.065,7.268 16.92,8 16.38,8.359 L9.692,12.989 C9.298,13.253 8.784,13.254 8.388,12.991 L1.508,8.402 C0.966,8.042 0.82,7.31 1.179,6.77 C1.407,6.429 1.78,6.246 2.16,6.246 L2.16,6.246 Z" fill="#648ebe35" class="si-glyph-fill"> </path> </g> </g></svg>
+                </div>
+                <script>
+                    document.querySelector('.card-nav-control').onclick= def
+                    function def() {
+                        document.querySelector('.media-nav').setAttribute('style','transform:translateY(80%)')
+                        setTimeout(() => {
+                            document.querySelector('.card-nav-control').setAttribute('style','background:unset')
+                            document.querySelector('.nav-arrow').setAttribute('style','opacity:1;visibility:visible;scale:1')
+                         document.querySelector('.card-nav-control').onclick= rev
+                        }, 1000);
+                    }
+                    function rev() {
+
+                            document.querySelector('.media-nav').setAttribute('style','transform:translateY(0)')
+                        setTimeout(() => {
+                            document.querySelector('.card-nav-control').setAttribute('style','background:#648ebe25')
+                            document.querySelector('.nav-arrow').setAttribute('style','opacity:0;visibility:hidden;scale:.95')
+                           document.querySelector('.card-nav-control').onclick= def
+                        }, 1000); 
+                        }
+                </script>
+            </div>
             <div class="search-bar">
                 <div class="search-char d-center">
                     <img src="src/components/icons/search.svg" alt="fa-search">
