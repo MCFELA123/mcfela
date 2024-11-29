@@ -37,7 +37,7 @@
         <div class="close-img-view d-center">
             <svg fill="#fff" width="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm3.707,12.293a1,1,0,1,1-1.414,1.414L12,13.414,9.707,15.707a1,1,0,0,1-1.414-1.414L10.586,12,8.293,9.707A1,1,0,0,1,9.707,8.293L12,10.586l2.293-2.293a1,1,0,0,1,1.414,1.414L13.414,12Z"></path></g></svg>
         </div>
-        <iframe src="src/templates/00/templatemo_590_topic_listing/index.html" class="img-view d-center" frameborder="0"></iframe>
+        <iframe src="" class="img-view d-center" frameborder="0"></iframe>
     </div>
 </div>
 <body class="d-container">
@@ -46,7 +46,7 @@
             <div class="details">
                 <div class="d-00">
                     <div class="mg-auto d-center">
-                        <img src="src/components/img/product icons/topiclisting.jpg" width="250" class="br-1em bx-10 outline img" alt="topic-listing">
+                        <img src="src/components/img/product icons/dnx1.webp" width="250" class="br-1em bx-10 outline img" alt="product-img">
                     </div><br>
                     <div class="mg-auto d-center">
                         <br>
@@ -76,9 +76,9 @@
                 <div class="d-00 d-align">
                     <div class="mg-d00">
                         <div class="d-lh-1">
-                            <text class="col-dark-grey-5cs fs-large rem">Topic Listing Template</text>
+                            <text class="col-dark-grey-5cs fs-large rem">DXN MUI Dashboard</text>
                         <br>
-                            <text class="col-dark-grey-5cv ltsp-01">by <text class="col-blue font-medium cursor-point">Owdy</text></text>
+                            <text class="col-dark-grey-5cv ltsp-01">by <text class="col-blue font-medium cursor-point">Paul Akhaomehn</text></text>
                         </div>
                         <div class="price-rate">
                             <div class="pr00 d-align">
@@ -98,7 +98,7 @@
                             <br>
                             <div class="ext-details">
                                 <text class="col-dark-grey-5cv ltsp-05">
-                                    Topic listing is a dashboard template by <text class="col-blue font-medium cursor-point">Owdy</text>. The dashboard and authentication pages are incorporated into this theme from the original design by <text class="col-blue font-medium cursor-point">mcfela team</text>. This is a multipage theme that ensures a smooth developer experience and flawless customization. It is all set for effortless tailoring with a clean codebase. The admin dashboard template has fewer cross-browser bugs and runs flawlessly across all available browsers. It is a page-speed-optimized theme with a faster loading time and reduced bounce rates. Additionally, this SEO-optimized theme helps get the expected rank in the search engine, ensuring better user engagement.
+                                    DNX, designed by <tex class="col-blue font-medium cursor-point">Paul Akhaomehn</tex> for the <text class="col-blue font-medium cursor-point">mcfela Community</text>, is an admin dashboard template. The efficient website template is built using the Material-UI framework. This multipage template provides seamless customization to developers, so it is all set for effortless tailoring with a clean codebase. It is a page-speed-optimized theme with a faster loading time and reduced bounce rates. Additionally, it is a cross-browser-compatible theme with fewer bugs. Hence, the SEO-optimized theme helps get the expected rank in the search engine, ensuring better user engagement.
                                 </text>
                             </div><br>
                             <div class="service-option">
@@ -111,7 +111,7 @@
                             </div><br><br>
                             <div class="hr-line"></div>
                             <br>
-                                <a href="src/templates/00/templatemo_590_topic_listing/index.html">
+                                <a href="https://themewagon.github.io/dnx#!">
                                     <button class="btn-primary br-7">
                                         <text class="ltsp-05">
                                             View live demo
@@ -121,7 +121,7 @@
                            <a href="https://paystack.com/pay/class-ui0xq9" class="payment">
                             <button class="btn-secondary br-7 mglft-10">
                                 <text class="ltsp-05">
-                                    Download
+                                    Download now
                                 </text>
                             </button>
                            </a>
@@ -140,13 +140,13 @@
                         <text class="col-dark-grey-5cs ltsp-05">Screenshots</text>
                         <div class="card-screen-container">
                             <div class="card-screen">
-                                <img class="img" src="src/components/img/product icons/topiclisting.jpg" alt="">
+                                <img class="img" src="src/components/img/product icons/dnx1.webp" alt="">
                             </div>
                             <div class="card-screen">
-                                <img class="img" src="src/components/img/product icons/topiclisting2.jpg" alt="">
+                                <img class="img" src="src/components/img/product icons/dnx.png" alt="">
                             </div>
                             <div class="card-screen">
-                                <img class="img" src="src/components/img/product icons/topiclisting3.png" alt="">
+                                <img class="img" src="src/components/img/product icons/dnx2.png" alt="">
                             </div>
                         </div>
                         <br>
@@ -304,15 +304,12 @@
                         </div>
                         <br>
                     </div>
-   
                     <div class="scroll d-center">
                         <div class="scroll-to d-center" onclick="document.querySelector('.card-view-container').scrollLeft+=200">
                             <img src="src/components/icons/arrow-left.svg" alt="arrow">
                         </div>
                     </div>
                 </div>
-                <br><br><br>
-            </div>
         </div>
     </div>
     <script>
@@ -322,6 +319,8 @@ for (let i = 0; i < nodeList.length; i++) {
   nodeList[i].addEventListener('click',function(){
     document.querySelector('.image-viewer').setAttribute('style','opacity:1;scale:1;visibility:visible;position:fixed')
     document.querySelector('.img-view').src=nodeList[i].src
+    document.documentElement.scrollTop-=5000
+    document.querySelector('.image-view').setAttribute('style','width:80%')
     setTimeout(() => {
     document.querySelector('.iframe-controls').setAttribute('style','display:none !important')
     document.querySelector('.close-img-view').setAttribute('style','display:flex')
@@ -332,6 +331,7 @@ for (let i = 0; i < nodeList.length; i++) {
 document.querySelector('.close-img-view, .image-viewer').addEventListener('click', function() {
     document.querySelector('.image-viewer').setAttribute('style','opacity:0;scale:.97;visibility:hidden;position:fixed')
     setTimeout(() => {
+        document.documentElement.scrollTop-=5000
         document.querySelector('.iframe-controls').setAttribute('style','display:none !important')
     document.querySelector('.close-img-view').setAttribute('style','display:none')
 }, 1000);
@@ -364,11 +364,11 @@ document.querySelector('.iframe-src').innerHTML=document.querySelector('.img-vie
 const hrefList = document.querySelectorAll("a");
 for (let i = 0; i < hrefList.length; i++) {
   hrefList[i].addEventListener('click',function(event){
-    document.documentElement.scrollTop-=5000
     document.querySelector('.image-view').setAttribute('style','width:80%')
     document.querySelector('.image-viewer').setAttribute('style','opacity:1;scale:1;visibility:visible;position:fixed;')
     document.querySelector('.iframe-controls').setAttribute('style','display:flex !important')
     document.querySelector('.iframe-src-ret').innerHTML = '<div class="card-controls d-center"><img src="src/components/icons/lock.svg" alt="fa-lock"></div> <div class="card-controls d-center lock"><text class="col-dark-grey-5cv ltsp-01 iframe-src">Localhost:</text></div>'
+    document.documentElement.scrollTop-=5000
     setTimeout(() => {
         document.querySelector('.close-img-view').setAttribute('style','display:none')
 }, 1000);
