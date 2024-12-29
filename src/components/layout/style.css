@@ -2052,7 +2052,7 @@ button:hover {
 
 .search-bar .search-char input[type=text]::placeholder {
     transform: translateY(.8px);
-    color: #335174e0;
+    color: #3351749a;
     font-family: fontLight;
     font-weight: 500 !important;
 }
@@ -2087,7 +2087,7 @@ button:hover {
 
 .nav-search .search-char input[type=text]::placeholder {
     transform: translateY(.8px);
-    color: #335174e0;
+    color: #335174a9;
     font-family: fontLight;
     font-weight: 500 !important;
 }
