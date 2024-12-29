@@ -34,20 +34,25 @@
             }
         </script>
         <div class="project-card">
-            <div class="card-project" id="filt">
+            <div class="card-project flex" id="filt">
                 <div class="mg-auto"><br>
-                    <text class="col-dark-grey-4 fs-large">Filter</text>
+                    <text class="col-dark-grey-4 fs-large" style="position: fixed !important;" >Filter</text>
                     <br><br>
                     <div class="filter-container" id="filter-container">
                         <br>
                         <div class="mg-auto">
-                            <text class="col-dark-grey-4 font-medium">Multi Range</text>
-                            <div class="right close-filter d-center" onclick="filterHide()">
-                                <text class="bold">&times;</text>
-                            </div>
-                            <br><div class="br-list br-first">
+                            <text class="col-dark-grey-4 font-medium filter-head">Multi Range
+                                <div class="right close-filter d-center" onclick="filterHide()">
+                                    <text class="bold">&times;</text>
+                                </div>
+                            </text>
+                            <br>
+                            <div class="br-list br-first">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist active toggle-all"></div>
+                                    <div class="checklist toggle-all">
+                                        <input type="radio" id="all" name="radio" checked/>
+                                        <label for="all">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium">All</text>
@@ -55,7 +60,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist toggle-less-equal-100"></div>
+                                    <div class="checklist toggle-less-equal-100">
+                                        <input type="radio" id="toggle-less-equal-100" name="radio"/>
+                                        <label for="toggle-less-equal-100">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium"><= $10 </text>
@@ -63,7 +71,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist toggle-10-500"></div>
+                                    <div class="checklist toggle-10-500">
+                                        <input type="radio" id="toggle-10-500" name="radio"/>
+                                        <label for="toggle-10-500">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium">$10 - $100</text>
@@ -71,7 +82,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist toggle-100-500"></div>
+                                    <div class="checklist toggle-100-500">
+                                        <input type="radio" id="toggle-100-500" name="radio"/>
+                                        <label for="toggle-100-500">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium">$100 - $500</text>
@@ -79,7 +93,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist">
+                                        <input type="radio" id="toggle-500" name="radio"/>
+                                        <label for="toggle-500">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4 font-medium">>= $500</text>
@@ -109,7 +126,10 @@
                               <br><text class="col-dark-grey-4 font-medium">Categories</text><br>
                               <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist">
+                                        <input type="radio" id="popular" name="radio"/>
+                                        <label for="popular">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">Popular </text>
@@ -117,7 +137,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist toggle-free">
+                                        <input type="radio" id="free" name="radio"/>
+                                        <label for="free">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">Top free</text>
@@ -125,7 +148,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist toggle-paid"></div>
+                                    <div class="checklist toggle-paid">
+                                        <input type="radio" id="paid" name="radio"/>
+                                        <label for="paid">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">Paid</text>
@@ -133,7 +159,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist toggle-dash">
+                                        <input type="radio" id="dashui" name="radio"/>
+                                        <label for="dashui">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">Dashboard UI</text>
@@ -141,7 +170,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist">
+                                        <input type="radio" id="ecom" name="radio"/>
+                                        <label for="ecom">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">E-commerce UI</text>
@@ -149,7 +181,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist">
+                                        <input type="radio" id="webapp" name="radio"/>
+                                        <label for="webapp">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">Web Apps</text>
@@ -157,7 +192,10 @@
                             </div><br>
                             <div class="br-list">
                                 <div class="card-br-list d-align">
-                                    <div class="checklist"></div>
+                                    <div class="checklist">
+                                        <input type="radio" id="backend" name="radio"/>
+                                        <label for="backend">S</label>
+                                    </div>
                                 </div>
                                 <div class="card-br-list d-align">
                                     <text class="col-dark-grey-4">Backend Templates</text>
@@ -173,7 +211,7 @@
                                     <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                 </div>
                                 <div class="right">
-                                    <text class="col-dark-grey-4">160</text>
+                                    <text class="col-dark-grey-4">260</text>
                                 </div>
                             </div>
                             <div class="mgt-10">
@@ -185,7 +223,7 @@
                                     <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                 </div>
                                 <div class="right">
-                                    <text class="col-dark-grey-4">176</text>
+                                    <text class="col-dark-grey-4">145</text>
                                 </div>
                             </div>
                             <div class="mgt-10">
@@ -197,7 +235,7 @@
                                     <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                 </div>
                                 <div class="right">
-                                    <text class="col-dark-grey-4">291</text>
+                                    <text class="col-dark-grey-4">86</text>
                                 </div>
                             </div>
                             <div class="mgt-10">
@@ -209,9 +247,10 @@
                                     <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                 </div>
                                 <div class="right">
-                                    <text class="col-dark-grey-4">190</text>
+                                    <text class="col-dark-grey-4">34</text>
                                 </div>
                             </div>
+                            <br><br><br>
                         </div>
                     </div>
                 </div>
@@ -263,7 +302,7 @@
                                 <img src="src/components/icons/search.svg" alt="fa-search">
                             </div>
                             <div class="search-char">
-                                <input type="text" placeholder="Search Templates..">
+                                <input type="text" class="searcher" placeholder="Search Templates..">
                             </div>
                             <div class="search-char d-center cursor-point">
                                 <img src="src/components/icons/option.svg" alt="fa-cmd">
@@ -283,10 +322,23 @@
                     </div>
                 <br>
                 <div class="product-container" id="product-container">
-                    <a class="all keyword-m keyword-a keyword-c keyword-so keyword-s keyword-b keyword-be keyword-t keyword-ta paid p100-500" hidden href="#product-sonoma.html">
-                        <div class="card-product" aria-placeholder="product-sonoma.html" onclick="fee()">
-                                <div class="cd-p0 d-center">
-                                    <img width="150" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                    <a class="all keyword-a keyword-c keyword-so keyword-s keyword-b keyword-be keyword-t keyword-ta paid p10-100" hidden href="#product-sonoma.html">
+                        <div class="card-product" aria-placeholder="product-watch-series.html" onclick="fee()">
+                            <div class="cd-p0 d-c">
+                                <div class="gen-1">
+                                    <div class="absolute gen-ai">
+                                        <div class="card-gen-ai d-align">
+                                            <img src="src/components/img/ai.png" width="17" alt="">
+                                        </div>
+                                        <div class="card-gen-ai d-">
+                                            <text class="col-dark-grey-5">GenAI</text>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="d-center">
+                                        <img width="120" src="src/components/img/product icons/watch.png" alt="">
+                                    </div>
+                                    <!-- <video src="./src/components//videos/series-watch.mp4" width="190" class="br-10" autoplay loop></video> -->
                                 </div>
                                 <div class="cd-p0">
                                     <div class="cd-after">
@@ -298,29 +350,165 @@
                                             <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                         </div>
                                         <div class="right">
-                                            <text class="col-dark-grey-5">$159.99</text>
+                                            <text class="col-dark-grey-5">$80.99</text>
                                         </div>
                                         <br><br>
                                        <div class="resm">
-                                        <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
-                                        <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                        <text class="col-dark-grey-5cs rem">cs-500 Watch App</text>
+                                        <br><text class="col-dark-grey-5cv fs-small">This app is loaded with the smooth est animation..</text>
                                        </div>
                                     </div>
                                 </div>
                                 <div class="cd-p01">
-                                    <div class="card-p01 d-center w100-important bg-unset">
-                                        <div class="d-center w100-important">
-                                            <text class="col-blue font-medium">Coming soon</text>
+                                    <div class="card-p01 d-center">
+                                        <div class="p01 d-center">
+                                            <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                        </div>
+                                        <div class="p01 d-align">
+                                            <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                        </div>
+                                    </div>
+                                    <div class="card-p01 d-center">
+                                        <div class="p01 d-center">
+                                            <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                        </div>
+                                        <div class="p01 d-align">
+                                            <text class="col-white font-medium">Add to cart</text>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             </a>
+                            <a class="all keyword-j keyword-jo keyword-joi keyword-join keyword-b keyword-met keyword-m keyword-me free" hidden href="#product-sonoma.html">
+                                <div class="card-product" aria-placeholder="product-join-meeting.html" onclick="fee()">
+                                    <div class="cd-p0 d-c">
+                                        <div class="gen-1">
+                                            <div class="absolute gen-ai">
+                                                <div class="card-gen-ai d-align">
+                                                    <img src="src/components/img/ai.png" width="17" alt="">
+                                                </div>
+                                                <div class="card-gen-ai d-">
+                                                    <text class="col-dark-grey-5">GenAI</text>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="d-center">
+                                                <img width="150" src="src/components/img/product icons/join-meeting.png" alt="">
+                                            </div>
+                                            <!-- <video src="./src/components//videos/series-watch.mp4" width="190" class="br-10" autoplay loop></video> -->
+                                        </div>
+                                        <div class="cd-p0">
+                                            <div class="cd-after">
+                                                <div class="left">
+                                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                </div>
+                                                <div class="right">
+                                                    <text class="col-blue">Free</text>
+                                                </div>
+                                                <br><br>
+                                               <div class="resm">
+                                                <text class="col-dark-grey-5cs rem">Join Meeting Card</text>
+                                                <br><text class="col-dark-grey-5cv fs-small">This is more like a design guide that will help devel..</text>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="cd-p01">
+                                            <div class="card-p01 d-center">
+                                                <div class="p01 d-center">
+                                                    <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                                </div>
+                                                <div class="p01 d-align">
+                                                    <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                                </div>
+                                            </div>
+                                            <div class="card-p01 d-center">
+                                                <div class="p01 d-center">
+                                                    <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                                </div>
+                                                <div class="p01 d-align">
+                                                    <text class="col-white font-medium">Add to cart</text>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                    <a class="all keyword-j keyword-jo keyword-joi keyword-join keyword-b keyword-met keyword-m keyword-me less-than-or-equal-to-100" hidden href="#product-sonoma.html">
+                                        <div class="card-product" aria-placeholder="product-join-meeting.html" onclick="fee()">
+                                            <div class="cd-p0 d-c">
+                                                <div class="gen-1">
+                                                    <div class="absolute gen-ai">
+                                                        <div class="card-gen-ai d-align">
+                                                            <img src="src/components/img/ai.png" width="17" alt="">
+                                                        </div>
+                                                        <div class="card-gen-ai d-">
+                                                            <text class="col-dark-grey-5">GenAI</text>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    <div class="d-center">
+                                                        <img width="130" src="src/components/img/product icons/ai-assist.png" alt="">
+                                                    </div>
+                                                    <!-- <video src="./src/components//videos/series-watch.mp4" width="190" class="br-10" autoplay loop></video> -->
+                                                </div>
+                                                <div class="cd-p0">
+                                                    <div class="cd-after">
+                                                        <div class="left">
+                                                            <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                            <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                            <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                            <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                            <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                        </div>
+                                                        <div class="right">
+                                                            <text class="col-dark-grey-5">$7.99</text>
+                                                        </div>
+                                                        <br><br>
+                                                       <div class="resm">
+                                                        <text class="col-dark-grey-5cs rem">AI Assistant</text>
+                                                        <br><text class="col-dark-grey-5cv fs-small">This is a design template guide for ai developers..</text>
+                                                       </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cd-p01">
+                                                    <div class="card-p01 d-center">
+                                                        <div class="p01 d-center">
+                                                            <img src="src/components/icons/heart.svg" width="16" alt="heart">
+                                                        </div>
+                                                        <div class="p01 d-align">
+                                                            <text class="col-dark-grey-5 font-medium">Wishlist</text>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-p01 d-center">
+                                                        <div class="p01 d-center">
+                                                            <img src="src/components/icons/cart-3.svg" alt="fa-bag">
+                                                        </div>
+                                                        <div class="p01 d-align">
+                                                            <text class="col-white font-medium">Add to cart</text>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
                             <a class="all keyword-v keyword-d keyword-da keyword-dash keyword-sh keyword-u keyword-ui keyword-ve paid p10-100" hidden href="#product-webos.html">
                                 <div class="card-product" aria-placeholder="product-venus.html" onclick="fee()">
-                                    <div class="cd-p0 d-center">
-
-                                        <img width="185" class="br-10" src="src/components/img/product icons/Venus.webp" alt="">
+                                    <div class="cd-p0">
+                                        <div class="gen-1">
+                                            <div class="absolute gen-ai">
+                                                <div class="card-gen-ai d-align">
+                                                    <img src="src/components/img/ai.png" width="17" alt="">
+                                                </div>
+                                                <div class="card-gen-ai d-">
+                                                    <text class="col-dark-grey-5">GenAI</text>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-center">
+                                           <img width="185" class="br-10" src="src/components/img/product icons/Venus.webp" alt="">
+                                        </div>
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -337,7 +525,7 @@
                                             <br><br>
                                            <div class="resm">
                                             <text class="col-dark-grey-5cs rem">Venus dashboard UI</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, Venus is a responsive..</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, Venus is a respo..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -361,10 +549,67 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all paid p10-100" hidden href="#">
+                            <a class="all keyword-m keyword-a keyword-ma keyword-mac keyword-mak keyword-mack keyword-c keyword-so keyword-s keyword-b keyword-be keyword-t keyword-ta paid p100-500" hidden href="#product-sonoma.html">
+                                <div class="card-product" aria-placeholder="product-sonoma.html" onclick="fee()">
+                                        <div class="cd-p0">
+                                            <div class="gen-1">
+                                                <div class="absolute gen-ai">
+                                                    <div class="card-gen-ai d-align">
+                                                        <img src="src/components/img/ai.png" width="17" alt="">
+                                                    </div>
+                                                    <div class="card-gen-ai d-">
+                                                        <text class="col-dark-grey-5">GenAI</text>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-center">
+                                                <img width="140" src="src/components/img/product icons/MacOS_Sonoma.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="cd-p0">
+                                            <div class="cd-after">
+                                                <div class="left">
+                                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-fll.svg" alt="fa-star">
+                                                    <img src="src/components/icons/star-outline.svg" alt="fa-star">
+                                                </div>
+                                                <div class="right">
+                                                    <text class="col-dark-grey-5">$159.99</text>
+                                                </div>
+                                                <br><br>
+                                               <div class="resm">
+                                                <text class="col-dark-grey-5cs rem">macOS sonoma beta</text>
+                                                <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="cd-p01">
+                                            <div class="card-p01 d-center w100-important bg-unset">
+                                                <div class="d-center w100-important">
+                                                    <text class="col-blue font-medium">Coming soon</text>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            <a class="all paid keyword-dash keyword-da p10-100" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="product-vision.html">
-                                    <div class="cd-p0 d-center">
-                                        <img width="185" src="src/components/img/product icons/vision ui.png" class="br-10" alt="">
+                                    <div class="cd-p0">
+                                        <div class="gen-1">
+                                            <div class="absolute gen-ai">
+                                                <div class="card-gen-ai d-align">
+                                                    <img src="src/components/img/ai.png" width="17" alt="">
+                                                </div>
+                                                <div class="card-gen-ai d-">
+                                                    <text class="col-dark-grey-5">GenAI</text>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-center">
+                                          <img width="185" src="src/components/img/product icons/vision ui.png" class="br-10" alt="">
+                                        </div>
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -405,11 +650,22 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all paid" hidden href="#">
+                            <a class="all free" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="#">
-                                    <div class="cd-p0 d-center">
-
-                                        <img width="130" src="src/components/img/product icons/ios.jpg" alt="">
+                                    <div class="cd-p0">
+                                        <div class="gen-1">
+                                            <div class="absolute gen-ai">
+                                                <div class="card-gen-ai d-align">
+                                                    <img src="src/components/img/ai.png" width="17" alt="">
+                                                </div>
+                                                <div class="card-gen-ai d-">
+                                                    <text class="col-dark-grey-5">GenAI</text>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-center">
+                                            <img width="130" src="src/components/img/product icons/ios.jpg" alt="">
+                                        </div>
                                     </div>
                                     <div class="cd-p0">
                                         <div class="cd-after">
@@ -426,7 +682,7 @@
                                             <br><br>
                                            <div class="resm">
                                             <text class="col-dark-grey-5cs rem">iOS beta stable</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what its..</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Made with react and vue, see what it looks like..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -439,7 +695,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
+                            <a class="all keyword-a keyword-c keyword-so keyword-s keyword-b keyword-be keyword-t keyword-ta paid p10-100" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="product-topic-listing.html">
                                     <div class="cd-p0 d-center">
 
@@ -484,7 +740,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
+                            <a class="all keyword-m keyword-d keyword-da keyword-dash keyword-sh keyword-u keyword-ui keyword-r paid p10-100" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="product-matreo.html">
                                     <div class="cd-p0 d-center">
 
@@ -505,7 +761,7 @@
                                             <br><br>
                                            <div class="resm">
                                             <text class="col-dark-grey-5cs rem">Materio  dashboard UI</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Classic dashboard made with react, it comes with responsive layout de..</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Classic dashboard made with react, it comes with..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -529,7 +785,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
+                            <a class="all keyword-m keyword-d keyword-da keyword-dash keyword-sh keyword-u keyword-ui keyword-ve paid p10-100" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="product-dnx.html">
                                     <div class="cd-p0 d-center">
 
@@ -545,12 +801,12 @@
                                                 <img src="src/components/icons/star-outline.svg" alt="fa-star">
                                             </div>
                                             <div class="right">
-                                                <text class="col-blue">free</text>
+                                                <text class="col-dark-grey-5">$33.99</text>
                                             </div>
                                             <br><br>
                                            <div class="resm">
                                             <text class="col-dark-grey-5cs rem">DNX MUI Dashboard</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Built with reactJS, and Material-UI, It employs a..</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Built with reactJS, and Material-UI, It emplo..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -574,8 +830,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
-                                <div class="card-product" onclick="fee()" aria-placeholder="#">
+                            <a class="all  paid p10-100" hidden href="#">
+                                <div class="card-product" onclick="fee()" aria-placeholder="product-adminart.html">
                                     <div class="cd-p0 d-center">
 
                                         <img width="185" class="br-10" src="src/components/img/product icons/adminmart-1.jpg" alt="">
@@ -595,7 +851,7 @@
                                             <br><br>
                                            <div class="resm">
                                             <text class="col-dark-grey-5cs rem">Adminart dashboard UI</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Built with pure HTML and CSS, see what its..</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Built with pure HTML and CSS, see what..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -619,8 +875,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
-                                <div class="card-product" onclick="fee()" aria-placeholder="#">
+                            <a class="all  paid p100-500" hidden href="#">
+                                <div class="card-product" onclick="fee()" aria-placeholder="product-horizon.html">
                                     <div class="cd-p0 d-center">
                                         <img width="185" class="br-10" src="src/components/img/product icons/Horizon-UI.png" alt="">
                                     </div>
@@ -638,8 +894,8 @@
                                             </div>
                                             <br><br>
                                            <div class="resm">
-                                            <text class="col-dark-grey-5cs rem">Horizon UI ⚡️</text>
-                                            <br><text class="col-dark-grey-5cv fs-small">Built with reactJS and vueJS, see what it looks..</text>
+                                            <text class="col-dark-grey-5cs rem">Horizon UI</text>
+                                            <br><text class="col-dark-grey-5cv fs-small">Built with reactJS and vueJS, see what ..</text>
                                            </div>
                                         </div>
                                     </div>
@@ -663,7 +919,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
+                            <a class="all free" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="#">
                                     <div class="cd-p0 d-center">
                                         <img width="150" src="src/components/img/product icons/list-ui.webp" alt="">
@@ -707,7 +963,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
+                            <a class="all free" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="#">
                                     <div class="cd-p0 d-center">
 
@@ -752,7 +1008,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="all" hidden href="#">
+                            <a class="all free" hidden href="#">
                                 <div class="card-product" onclick="fee()" aria-placeholder="#">
                                     <div class="cd-p0 d-center">
 
@@ -837,6 +1093,230 @@ togglePaid.forEach(element => {
 });
 }, 1000);
 })
+
+const toggleFree = document.querySelectorAll('.free')
+    document.querySelector('.toggle-free').addEventListener('click',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+toggleFree.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}, 1000);
+})
+
+const toggleDash = document.querySelectorAll('.keyword-dash')
+    document.querySelector('.toggle-dash').addEventListener('click',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+toggleDash.forEach(element => {
+    document.querySelector('.product-container').innerHTML += element.innerHTML
+});
+}, 1000);
+})
+
+const Keyword_a = document.querySelectorAll('.keyword-a')
+    document.querySelector('.searcher').addEventListener('keydown',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+Keyword_a.forEach(element => {
+    if(document.querySelector('.searcher').value=='a') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='as') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='aw') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ab') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ax') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ad') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='af') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ac') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+
+    // else {
+    //     document.querySelector('.product-container').innerHTML = '<div style="width:100%;height:100%;" class="d-center"><div><br><br><br><br><br><br><br><text class="col-dark-grey-5cv">No results for <b>'+ document.querySelector('.searcher').value +'</b></text></div></div>'
+    // }
+});
+
+}, 1000);
+})
+
+const Keyword_m = document.querySelectorAll('.keyword-m')
+    document.querySelector('.searcher').addEventListener('keydown',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+Keyword_m.forEach(element => {
+    if(document.querySelector('.searcher').value=='m') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ma') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='mac') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='mc') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='mi') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='me') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='mo') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ml') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+
+    // else {
+    //     document.querySelector('.product-container').innerHTML = '<div style="width:100%;height:100%;" class="d-center"><div><br><br><br><br><br><br><br><text class="col-dark-grey-5cv">No results for <b>'+ document.querySelector('.searcher').value +'</b></text></div></div>'
+    // }
+});
+
+}, 1000);
+})
+
+const Keyword_ma = document.querySelectorAll('.keyword-ma, .keyword-mac')
+    document.querySelector('.searcher').addEventListener('keydown',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+Keyword_ma.forEach(element => {
+    if(document.querySelector('.searcher').value=='mac') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='mak') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='mack') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='makc') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+
+    // else {
+    //     document.querySelector('.product-container').innerHTML = '<div style="width:100%;height:100%;" class="d-center"><div><br><br><br><br><br><br><br><text class="col-dark-grey-5cv">No results for <b>'+ document.querySelector('.searcher').value +'</b></text></div></div>'
+    // }
+});
+
+
+}, 1000);
+})
+
+
+const Keyword_all = document.querySelectorAll('.all')
+    document.querySelector('.searcher').addEventListener('keydown',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+Keyword_all.forEach(element => {
+    if(document.querySelector('.searcher').value=='a') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='al') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='all') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ac') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='acl') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+
+    // else {
+    //     document.querySelector('.product-container').innerHTML = '<div style="width:100%;height:100%;" class="d-center"><div><br><br><br><br><br><br><br><text class="col-dark-grey-5cv">No results for <b>'+ document.querySelector('.searcher').value +'</b></text></div></div>'
+    // }
+});
+
+
+}, 1000);
+})
+
+
+const Keyword_dash = document.querySelectorAll('.keyword-dash, .keyword-da')
+    document.querySelector('.searcher').addEventListener('keydown',function(){
+    document.querySelector('.product-container').innerHTML='<div class="resulter d-center"><div class="result-preloader"><div></div><div></div><div></div><div></div></div></div>'
+setTimeout(() => {
+    document.querySelector('.product-container').innerHTML = ''
+}, 999);
+    setTimeout(() => {
+Keyword_dash.forEach(element => {
+    if(document.querySelector('.searcher').value=='d') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='da') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='ds') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='das') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='dash') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='dashb') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='dashb') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='dasbo') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='dashboa') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='dashboar') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    if(document.querySelector('.searcher').value=='dashboard') {
+        document.querySelector('.product-container').innerHTML += element.innerHTML
+    }
+    // else {
+    //     document.querySelector('.product-container').innerHTML = '<div style="width:100%;height:100%;" class="d-center"><div><br><br><br><br><br><br><br><text class="col-dark-grey-5cv">No results for <b>'+ document.querySelector('.searcher').value +'</b></text></div></div>'
+    // }
+});
+
+
+}, 1000);
+})
+
 
 const lnk = document.querySelectorAll(".card-product");
 for (let i = 0; i < lnk.length; i++) {

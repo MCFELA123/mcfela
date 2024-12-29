@@ -8,384 +8,578 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="layout-container">
-        <div class="container">
-            <div class="side-react">
-                <div class="header-title">
-                    <div class="card-header">
-                        <div class="card-title d-center">
-                            <img src="src/components/icons/favico/favicon.png" width="40" alt="favicon">
-                        </div>
-                        <div class="card-title d-align">
-                            <text class="bold fs-12 col-blue-grad">mcfela</text>
-                        </div>
-                    </div>
-                </div>
-                <div class="pager-items">
-                    <div class="card-items data-active" onclick="frameHome()">
-                        <div class="data-item d-center">
-                            <img class="img" src="src/components/icons/home.svg" alt="home">
-                        </div>
-                        <div class="data-item d-align">
-                            <text>Home</text>
-                        </div>
-                        <div class="data-item d-center">
-                            <div class="card-more d-center">
-                                <img src="src/components/icons/arrow-down.svg" class="data-item-arrow" alt="fa-plus">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="data-item-home">
-                        <div class="card-items d-sep data-item-active">
-                            <div class="data-item d-center">
-                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
-                            <div class="data-item d-align">
-                                <text>Dashboard</text>
-                            </div>
-                        </div>
-                        <div class="card-items d-sep data-item-unactive">
-                            <div class="data-item d-center">
-                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
-                            <div class="data-item d-align">
-                                <text>Overview</text>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-items data-unactive card3" onclick="frameProjects()">
-                        <div class="data-item d-center">
-                            <img class="img" src="src/components/icons/project.svg" alt="project">
-                        </div>
-                        <div class="data-item d-align">
-                            <text>Projects</text>
-                        </div>
-                        <div class="data-item d-center">
-                            <div class="card-more d-center">
-                                <img src="src/components/icons/arrow-left3.svg" class="data-item-project-arrow" alt="fa-plus">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="data-item-projects">
-                        <div class="card-items d-sep data-item-unactive">
-                            <div class="data-item d-center">
-                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
-                            <div class="data-item d-align">
-                                <text>Portfolio</text>
-                            </div>
-                        </div>
-                        <div class="card-items d-sep data-item-unactive">
-                            <div class="data-item d-center">
-                                <svg width="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                        </div>
-                            <div class="data-item d-align">
-                                <text>Shop</text>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-items data-unactive">
-                        <div class="data-item d-center">
-                            <img class="img" src="src/components/icons/team.svg" alt="team">
-                        </div>
-                        <div class="data-item d-align">
-                            <text>Team</text>
-                        </div>
-                        <div class="data-item d-center">
-                            <div class="card-more d-center">
-                                <img src="src/components/icons/arrow-left3.svg" alt="fa-plus">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-items data-unactive">
-                        <div class="data-item d-center">
-                            <img class="img" src="src/components/icons/settings.svg" alt="settings">
-                        </div>
-                        <div class="data-item d-align">
-                            <text>Settings</text>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-message d-center">
-                    <div class="data-message">
-                        <text class="fs-10 bold col-white">Upgrade to Pro</text>
-                        <br>
-                        <div class="transY-1">
-                            <text class="fs-8 lnh-10 col-light-grey">Get 1 month free <br> and unlock</text>
-                        </div><br>
-                        <button class="btn-upgrade">
-                            <text class="fs-10 bold">Upgrade</text>
-                        </button>
-                    </div>
-                </div>
-                <div class="bottom-pager">
-                    <div class="card-items card-bottom">
-                        <div class="data-item d-center">
-                            <img class="img" src="src/components/icons/help.svg" alt="help">
-                        </div>
-                        <div class="data-item d-align">
-                            <text>FAQ</text>
-                        </div>
-                        <div class="data-item d-center">
-                            <div class="card-more bg-unset d-center">
-                                <img src="src/components/icons/bulb.svg" alt="fa-bulb">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-items card-bottom">
-                        <div class="data-item d-center">
-                            <img class="img" src="src/components/icons/logout.svg" alt="Logout">
-                        </div>
-                        <div class="data-item d-align">
-                            <text>Log out</text>
-                        </div>
-                        <div class="data-item d-center">
-                            <div class="card-more bg-unset d-center"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container main-content">
-            <section class="main">
-                <div class="main-header d-center">
-                    <div class="card-main-head">
-                        <div class="left welcome-char">
-                            <div class="card-wel-char d-center" onclick="menu()">
-                                <img src="src/components/icons/project.svg" alt="fa-sidebar">
-                            </div>
-                            <div class="card-wel-char goof">
-                                <text class="bold fs-large">Good evening,</text>
-                            <text class="fs-12 col-blue bold fs-larger">Alex</text>
-                            </div>
-                        </div>
-                        <div class="right-absolute right-ash">
-                            <button class="btn-primary">
-                                <text class="">
-                                    Get Started
-                                </text>
-                            </button>
-                            <div class="start-link search-start d-center">
-                                <div class="search-bar top-search br-10">
-                                    <div class="search-char d-center">
-                                        <img src="src/components/icons/search.svg" alt="fa-search">
-                                    </div>
-                                    <div class="search-char">
-                                        <input type="text" placeholder="Search">
-                                    </div>
-                                    <div class="search-char d-center">
-                                        <div class="ctrl-click d-center">
-                                            <text class="">CTRL K</text>
-                                        </div>
+ <div class="layout-container">
+     <div class="container">
+         <div class="nav-action d-center">
+             <img src="src/components/icons/collapse.svg" alt="">
+         </div>
+         <div class="side-react">
+             <div class="header-title">
+                 <div class="card-header">
+                     <div class="card-title d-center">
+                         <img src="src/components/icons/favico/favicon.png" width="40" alt="favicon">
+                     </div>
+                     <div class="card-title d-align">
+                         <text class="bold fs-12 col-blue-grad">mcfela</text>
+                     </div>
+                 </div>
+             </div>
+             <div class="search-side">
+                 <div class="search-bar flex side-search top-search br-10">
+                     <div class="search-char d-center">
+                         <img src="src/components/icons/search.svg" alt="fa-search">
+                     </div>
+                     <div class="search-char">
+                         <input type="text" placeholder="Search">
+                     </div>
+                     <div class="search-char d-center">
+                         <div class="ctrl-click d-center">
+                             <text class="semi-bold">CTRL K</text>
+                         </div>
+                     </div>
+                 </div>
+             </div><br><br>
+             <div class="pager-items">
+                 <div class="card-items data-unactive" onclick="frameDash()">
+                     overview
+                     <input type="radio" id="overview" name="radio" checked/>
+                     <label for="overview">
+                         <div class="strap">
+                             <div class="d-align">
+                                 <div class="left pr-2 d-center">
+                                     <div class="icon-box d-center">
+                                         <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM9.11 16.9C9.11 17.18 8.89 17.4 8.61 17.4H5.82C5.54 17.4 5.32 17.18 5.32 16.9V12.28C5.32 11.65 5.83 11.14 6.46 11.14H8.61C8.89 11.14 9.11 11.36 9.11 11.64V16.9ZM13.89 16.9C13.89 17.18 13.67 17.4 13.39 17.4H10.6C10.32 17.4 10.1 17.18 10.1 16.9V7.74C10.1 7.11 10.61 6.6 11.24 6.6H12.76C13.39 6.6 13.9 7.11 13.9 7.74V16.9H13.89ZM18.68 16.9C18.68 17.18 18.46 17.4 18.18 17.4H15.39C15.11 17.4 14.89 17.18 14.89 16.9V13.35C14.89 13.07 15.11 12.85 15.39 12.85H17.54C18.17 12.85 18.68 13.36 18.68 13.99V16.9Z" fill="#204875e0"></path> </g></svg>
+                                     </div>
+                                 </div>
+                                 <div class="left">
+                                     <text class="col-white semi-bold ltsp-01">Overview</text>
+                                 </div>
+                             </div>
+                         </div>
+                     </label>
+                 </div>
+                 <div class="card-items data-unactive card3" onclick="frameShop()">
+                     project
+                     <input type="radio" id="project" name="radio"/>
+                     <label for="project">
+                     <div class="strap">
+                         <div class="d-align">
+                             <div class="left pr-2 d-center">
+                                 <div class="icon-box d-center">
+                                     <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21.0582 11.8216L20.8982 11.6016C20.6182 11.2616 20.2882 10.9916 19.9082 10.7916C19.3982 10.5016 18.8182 10.3516 18.2182 10.3516H5.76824C5.16824 10.3516 4.59824 10.5016 4.07824 10.7916C3.68824 11.0016 3.33824 11.2916 3.04824 11.6516C2.47824 12.3816 2.20824 13.2816 2.29824 14.1816L2.66824 18.8516C2.79824 20.2616 2.96824 22.0016 6.13824 22.0016H17.8582C21.0282 22.0016 21.1882 20.2616 21.3282 18.8416L21.6982 14.1916C21.7882 13.3516 21.5682 12.5116 21.0582 11.8216ZM14.3882 17.3416H9.59824C9.20824 17.3416 8.89824 17.0216 8.89824 16.6416C8.89824 16.2616 9.20824 15.9416 9.59824 15.9416H14.3882C14.7782 15.9416 15.0882 16.2616 15.0882 16.6416C15.0882 17.0316 14.7782 17.3416 14.3882 17.3416Z" fill="#204875e0"></path> <path d="M20.56 8.59643C20.5976 8.97928 20.1823 9.23561 19.8175 9.11348C19.3127 8.94449 18.7814 8.86 18.2289 8.86H5.76891C5.21206 8.86 4.66381 8.95012 4.15225 9.12194C3.79185 9.24298 3.37891 8.99507 3.37891 8.61489V6.66C3.37891 3.09 4.46891 2 8.03891 2H9.21891C10.6489 2 11.0989 2.46 11.6789 3.21L12.8789 4.81C13.1289 5.15 13.1389 5.17 13.5789 5.17H15.9589C19.0846 5.17 20.3059 6.00724 20.56 8.59643Z" fill="#204875e0"></path> </g></svg>
+                                 </div>
+                             </div>
+                             <div class="left">
+                                 <text class="col-white semi-bold ltsp-01">Projects</text>
+                             </div>
+                         </div>
+                     </div>
+                     </label>
+                 </div>
+                 <div class="card-items data-unactive" onclick="frameShop()">
+                     shop
+                     <input type="radio" id="shop" name="radio"/>
+                     <label for="shop">
+                         <div class="strap">
+                             <div class="d-align">
+                                 <div class="left pr-2 d-center">
+                                     <div class="icon-box d-center">
+                                         <svg width="21.5" style="scale: 1.1;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19.9597 8.95844C19.2897 8.21844 18.2797 7.78844 16.8797 7.63844V6.87844C16.8797 5.50844 16.2997 4.18844 15.2797 3.26844C14.2497 2.32844 12.9097 1.88844 11.5197 2.01844C9.12975 2.24844 7.11975 4.55844 7.11975 7.05844V7.63844C5.71975 7.78844 4.70975 8.21844 4.03975 8.95844C3.06975 10.0384 3.09975 11.4784 3.20975 12.4784L3.90975 18.0484C4.11975 19.9984 4.90975 21.9984 9.20975 21.9984H14.7897C19.0897 21.9984 19.8797 19.9984 20.0897 18.0584L20.7897 12.4684C20.8997 11.4784 20.9297 10.0384 19.9597 8.95844ZM11.6597 3.40844C12.6597 3.31844 13.6097 3.62844 14.3497 4.29844C15.0797 4.95844 15.4897 5.89844 15.4897 6.87844V7.57844H8.50975V7.05844C8.50975 5.27844 9.97975 3.56844 11.6597 3.40844ZM11.9997 18.5784C9.90975 18.5784 8.20975 16.8784 8.20975 14.7884C8.20975 12.6984 9.90975 10.9984 11.9997 10.9984C14.0897 10.9984 15.7897 12.6984 15.7897 14.7884C15.7897 16.8784 14.0897 18.5784 11.9997 18.5784Z" fill="#204875e0"></path> <path d="M10.9999 16.5781C10.7499 16.5781 10.4999 16.4481 10.3599 16.2181C10.1499 15.8681 10.2599 15.3981 10.6199 15.1881L11.5099 14.6581V13.5781C11.5099 13.1681 11.8499 12.8281 12.2599 12.8281C12.6699 12.8281 12.9999 13.1581 12.9999 13.5781V15.0781C12.9999 15.3381 12.8599 15.5881 12.6399 15.7181L11.3899 16.4681C11.2699 16.5381 11.1299 16.5781 10.9999 16.5781Z" fill="#204875e0"></path> </g></svg>
+                                     </div>
+                                 </div>
+                                 <div class="left">
+                                     <text class="col-white semi-bold ltsp-01">Shop</text>
+                                 </div>
+                             </div>
+                         </div>
+                     </label>
+                 </div>
+                 <div class="d-center">
+                     <div class="hx-line mgt-10"></div>
+                 </div>
+                 <div class="card-items data-unactive" onclick="frameTeam()">
+                     community
+                     <input type="radio" id="community" name="radio"/>
+                     <label for="community">
+                         <div class="strap">
+                             <div class="d-align">
+                                 <div class="left pr-2 d-center">
+                                     <div class="icon-box d-center">
+                                         <svg width="21.5" style="scale: 1.15;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM12 6C13.99 6 15.6 7.61 15.6 9.6C15.6 10.07 15.51 10.52 15.35 10.93C14.94 11.97 14.05 12.78 12.95 13.08C12.65 13.16 12.33 13.21 12 13.21C11.67 13.21 11.35 13.17 11.05 13.08C9.95 12.78 9.06 11.98 8.65 10.93C8.49 10.52 8.4 10.07 8.4 9.6C8.4 7.61 10.01 6 12 6ZM9.6 18C7.61 18 6 16.39 6 14.4C6 13.2675 6.52861 12.2563 7.34433 11.5961C7.58105 11.4045 7.91916 11.5252 8.06744 11.7912C8.65221 12.8402 9.64554 13.6195 10.81 13.93C11.19 14.04 11.58 14.09 12 14.09C12.2489 14.09 12.4868 14.0716 12.7181 14.0347C12.9554 13.9969 13.2 14.1497 13.2 14.39C13.2 15.45 12.74 16.41 12 17.07C11.36 17.65 10.52 18 9.6 18ZM14.4 18C14.0515 18 13.71 17.9512 13.3878 17.8576C13.0613 17.7628 13.0015 17.3559 13.2059 17.0843C13.781 16.3202 14.1 15.3764 14.1 14.4C14.1 14.2 14.08 13.99 14.05 13.8C14.0321 13.6868 14.0898 13.5756 14.1899 13.5197C14.914 13.1155 15.5205 12.5224 15.9242 11.7942C16.0723 11.5272 16.4106 11.4042 16.6487 11.5953C17.471 12.2555 18 13.267 18 14.4C18 16.39 16.39 18 14.4 18Z" fill="#204875e0"></path> </g></svg>
+                                     </div>
+                                 </div>
+                                 <div class="left">
+                                     <text class="col-white semi-bold ltsp-01">Community</text>
+                                 </div>
+                             </div>
+                         </div>
+                     </label>
+                 </div>
+                 <div class="card-items data-unactive">
+                    chat
+                    <input type="radio" id="chat" name="radio"/>
+                    <label for="chat">
+                        <div class="strap">
+                            <div class="d-align">
+                                <div class="left pr-2 d-center">
+                                    <div class="icon-box d-center">
+                                        <svg width="21.5" style="scale: 1.1;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM18.28 12.91C18.28 13.11 18.27 13.31 18.25 13.5C18.07 15.62 16.82 16.68 14.52 16.68H14.2C14 16.68 13.81 16.77 13.7 16.93L12.76 18.19C12.34 18.75 11.67 18.75 11.25 18.19L10.31 16.93C10.21 16.8 9.98 16.68 9.81 16.68H9.49C6.98 16.68 5.73 16.06 5.73 12.92V9.76C5.73 7.46 6.79 6.21 8.91 6.03C9.08 6.01 9.28 6 9.49 6H14.52C17.03 6 18.28 7.26 18.28 9.76V12.91Z" fill="#204875e0"></path> </g></svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="start-link d-center">
-                                <main class="d-center">
-                                    <img src="src/components/icons/lang.svg" alt="fa-language">
-                                </main>
-                            </div>
-                            <div class="start-link d-center">
-                                <main class="d-center">
-                                    <img src="src/components/icons/sun.svg" alt="fa-sun">
-                                </main>
-                            </div>
-                            <div class="start-link d-center">
-                                <main class="d-center">
-                                    <img src="src/components/icons/apps.svg" alt="fa-apps">
-                                </main>
-                            </div>
-                            <div class="start-link d-center">
-                                <main class="d-center">
-                                    <img src="src/components/icons/bell.svg" alt="fa-bell">
-                                </main>
-                            </div>
-                        </div>
-                        <div class="card-wel-char-2 d-center">
-                            <img src="src/components/icons/project.svg" alt="fa-sidebar">
-                        </div>
-                    </div>
-                </div>
-                <div class="page-indicator-container d-center">
-                    <div class="page-indicator">
-                        <a href="#/index.html" onclick="frameDash()">
-                            <div class="indicator d-center">
-                                <text id="indicator1">Home</text>
-                            </div>
-                        </a>
-                        <div class="indicator arrow d-center">
-                            <img src="src/components/icons/arrow-left.svg" alt="fa-arrow-left">
-                        </div>
-                        <a href="#/dashboard.html">
-                            <div class="indicator d-center" onclick="frameShop()">
-                                <text id="indicator2">Projects</text>
-                            </div>
-                        </a>
-                        <div class="indicator arrow d-center" id="show">
-                            <img src="src/components/icons/arrow-left.svg" alt="fa-arrow-left">
-                        </div>
-                        <a href="#">
-                            <div class="indicator d-center bg-unset box-unset op-07">
-                                <text id="indicator3">Shop</text>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="d-sect"></div>
-                <iframe src="projects.html" frameborder="0" id="frame"></iframe>
-            </section>
-            <section class="right-side">
-                <div class="user-profile d-center">
-                    <img src="src/components/avatar/man.png" alt="avatar">
-                </div>
-                <div class="mg-auto d-center">
-                    <img src="src/components/icons/team2.svg" alt="fa-team">
-                </div>
-                <div class="mg-auto d-center">
-                    <div class="team">
-                        <div class="card-team">
-                            <div class="pre-status online"></div>
-                            <img src="src/components/avatar/smith.jpg" alt="">
-                            <div class="mg-auto d-center">
-                                <div class="user-status absolute">
-                                    <div class="card-status-user d-center">
-                                        <img src="src/components/icons/signal.svg" alt=" fa-signal">
-                                    </div>
-                                    <div class="card-status-user d-align">
-                                        <text class="bold">4min</text>
-                                    </div>
+                                <div class="left">
+                                    <text class="col-white semi-bold ltsp-01">Chat</text>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-team">
-                            <div class="pre-status online"></div>
-                            <img src="src/components/avatar/kate.png" alt="">
-                        </div>
-                        <div class="card-team">
-                            <div class="pre-status offline"></div>
-                            <img src="src/components/avatar/yamahr.png" alt="">
-                        </div>
-                        <div class="card-team">
-                            <div class="pre-status offline"></div>
-                            <img src="src/components/avatar/kiara.png" alt="">
-                        </div>
-                        <div class="card-team">
-                            <div class="pre-status offline"></div>
-                            <img src="src/components/avatar/stacy.png" alt="">
-                        </div>
-                        <div class="card-team">
-                            <div class="pre-status offline"></div>
-                            <img src="src/components/avatar/mich.png" alt="">
-                        </div>
+                    </label>
+                </div>
+                 <div class="card-items data-unactive">
+                     tutorials
+                     <input type="radio" id="discover" name="radio"/>
+                     <label for="discover">
+                         <div class="strap">
+                            <div class="d-align">
+                                <div class="left pr-2 d-center">
+                                    <div class="icon-box d-center">
+                                       <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.9808 3.02084C20.1108 2.15084 18.8808 1.81084 17.6908 2.11084L7.89084 4.56084C6.24084 4.97084 4.97084 6.25084 4.56084 7.89084L2.11084 17.7008C1.81084 18.8908 2.15084 20.1208 3.02084 20.9908C3.68084 21.6408 4.55084 22.0008 5.45084 22.0008C5.73084 22.0008 6.02084 21.9708 6.30084 21.8908L16.1108 19.4408C17.7508 19.0308 19.0308 17.7608 19.4408 16.1108L21.8908 6.30084C22.1908 5.11084 21.8508 3.88084 20.9808 3.02084ZM12.0008 15.8808C9.86084 15.8808 8.12084 14.1408 8.12084 12.0008C8.12084 9.86084 9.86084 8.12084 12.0008 8.12084C14.1408 8.12084 15.8808 9.86084 15.8808 12.0008C15.8808 14.1408 14.1408 15.8808 12.0008 15.8808Z" fill="#204875e0"></path> </g></svg>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <text class="col-white semi-bold ltsp-01">Discover</text>
+                                </div>
+                            </div>
+                         </div>
+                     </label>
+                 </div>
+             </div>
+             <div class="card-message d-center">
+                 <div class="data-message">
+                     <text class="fs-10 bold col-white">Upgrade to Pro</text>
+                     <br>
+                     <div class="transY-1">
+                         <text class="fs-8 lnh-10 col-light-grey">Get 1 month free <br> and unlock</text>
+                     </div><br>
+                     <button class="btn-upgrade">
+                         <text class="fs-10 bold">Upgrade</text>
+                     </button>
+                 </div>
+             </div>
+             <div class="botom-pager">
+                 <div class="card-items data-unactive">
+                     settings
+                     <input type="radio" id="settings" name="radio"/>
+                     <label for="settings">
+                         <div class="strap">
+                             <div class="d-align">
+                                 <div class="left pr-2 d-center">
+                                     <div class="icon-box d-center">
+                                         <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM7.67 5.5C7.67 5.09 8.01 4.75 8.42 4.75C8.83 4.75 9.17 5.09 9.17 5.5V9.4C9.17 9.81 8.83 10.15 8.42 10.15C8.01 10.15 7.67 9.81 7.67 9.4V5.5ZM9.52282 16.4313C9.31938 16.5216 9.17 16.7132 9.17 16.9358V18.5C9.17 18.91 8.83 19.25 8.42 19.25C8.01 19.25 7.67 18.91 7.67 18.5V16.9358C7.67 16.7132 7.5206 16.5216 7.31723 16.4311C6.36275 16.0064 5.7 15.058 5.7 13.95C5.7 12.45 6.92 11.22 8.42 11.22C9.92 11.22 11.15 12.44 11.15 13.95C11.15 15.0582 10.4791 16.0066 9.52282 16.4313ZM16.33 18.5C16.33 18.91 15.99 19.25 15.58 19.25C15.17 19.25 14.83 18.91 14.83 18.5V14.6C14.83 14.19 15.17 13.85 15.58 13.85C15.99 13.85 16.33 14.19 16.33 14.6V18.5ZM15.58 12.77C14.08 12.77 12.85 11.55 12.85 10.04C12.85 8.93185 13.5209 7.98342 14.4772 7.55873C14.6806 7.46839 14.83 7.27681 14.83 7.05421V5.5C14.83 5.09 15.17 4.75 15.58 4.75C15.99 4.75 16.33 5.09 16.33 5.5V7.06421C16.33 7.28681 16.4794 7.47835 16.6828 7.56885C17.6372 7.9936 18.3 8.94195 18.3 10.05C18.3 11.55 17.08 12.77 15.58 12.77Z" fill="#204875e0"></path> </g></svg>
+                                     </div>
+                                 </div>
+                                 <div class="left">
+                                     <text class="col-white semi-bold ltsp-01">Settings</text>
+                                 </div>
+                             </div>
+                         </div>
+                     </label>
+                 </div>
+                 <div class="card-items data-unactive">
+                     <div class="d-align">
+                         <div class="left pr-2 d-center">
+                             <div class="icon-box d-center">
+                                 <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM16.37 14.63L14.15 16.85C13.61 17.39 12.91 17.65 12.21 17.65C11.51 17.65 10.8 17.38 10.27 16.85C9.2 15.78 9.2 14.03 10.27 12.96L11.68 11.55C11.97 11.26 12.45 11.26 12.74 11.55C13.03 11.84 13.03 12.32 12.74 12.61L11.33 14.02C10.84 14.51 10.84 15.3 11.33 15.79C11.82 16.28 12.61 16.28 13.1 15.79L15.32 13.57C15.93 12.96 16.27 12.14 16.27 11.27C16.27 10.4 15.93 9.59 15.32 8.97C14.09 7.74 11.95 7.74 10.72 8.97L8.29 11.4C7.25 12.44 7.25 14.14 8.29 15.19C8.58 15.48 8.58 15.96 8.29 16.25C8 16.54 7.52 16.54 7.23 16.25C5.6 14.62 5.6 11.97 7.23 10.34L9.65 7.92C10.55 7.02 11.74 6.53 13.01 6.53C14.28 6.53 15.47 7.02 16.37 7.92C17.27 8.82 17.76 10.01 17.76 11.28C17.76 12.55 17.27 13.74 16.37 14.63Z" fill="#204875e0"></path> </g></svg>
+                             </div>
+                         </div>
+                         <div class="left">
+                             <text class="col-white semi-bold ltsp-01">Logout</text>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="container main-content">
+         <section class="main">
+             <div class="main-header d-center">
+                 <div class="card-main-head">
+                     <div class="left welcome-char">
+                         <div class="card-wel-char d-center" onclick="menu()">
+                             <img src="src/components/icons/project.svg" alt="fa-sidebar">
+                         </div>
+                         <div class="card-wel-char goof">
+                             <text class="bold fs-large">Good evening,</text>
+                         <text class="fs-12 col-blue bold fs-larger">Alex</text>
+                         </div>
+                     </div>
+                     <div class="right-absolute right-ash">
+                         <button class="btn-primary">
+                             <text class="">
+                                 Get Started
+                             </text>
+                         </button>
+                         <div class="start-link d-center">
+                             <main class="d-center">
+                                 <img src="src/components/icons/lang.svg" alt="fa-language">
+                             </main>
+                         </div>
+                         <div class="start-link d-center">
+                             <main class="d-center">
+                                 <img src="src/components/icons/sun.svg" alt="fa-sun">
+                             </main>
+                         </div>
+                         <div class="start-link d-center">
+                             <main class="d-center">
+                                 <img src="src/components/icons/apps.svg" alt="fa-apps">
+                             </main>
+                         </div>
+                         <div class="start-link d-center">
+                             <main class="d-center">
+                                 <img src="src/components/icons/bell.svg" alt="fa-bell">
+                             </main>
+                         </div>
+                     </div>
+                     <div class="card-wel-char-2 d-center">
+                         <img src="src/components/icons/project.svg" alt="fa-sidebar">
+                     </div>
+                 </div>
+             </div>
+             <div class="page-indicator-container d-center">
+                 <div class="page-indicator">
+                     <a href="#/index.html" onclick="frameDash()">
+                         <div class="indicator d-center">
+                             <text id="indicator1">Home</text>
+                         </div>
+                     </a>
+                     <div class="indicator arrow d-center">
+                         <img src="src/components/icons/arrow-left.svg" alt="fa-arrow-left">
+                     </div>
+                     <a href="#/dashboard.html">
+                         <div class="indicator d-center" onclick="frameShop()">
+                             <text id="indicator2">Projects</text>
+                         </div>
+                     </a>
+                     <div class="indicator arrow d-center" id="show">
+                         <img src="src/components/icons/arrow-left.svg" alt="fa-arrow-left">
+                     </div>
+                     <a href="#">
+                         <div class="indicator d-center bg-unset box-unset op-07">
+                             <text id="indicator3">Shop</text>
+                         </div>
+                     </a>
+                 </div>
+             </div>
+             <div class="d-sect"></div>
+             <iframe src="projects.html" frameborder="0" id="frame"></iframe>
+         </section>
+         <section class="right-side">
+             <div class="user-profile d-center">
+                 <img src="src/components/avatar/man.png" alt="avatar">
+             </div>
+             <div class="mg-auto d-center">
+                 <img src="src/components/icons/team2.svg" alt="fa-team">
+             </div>
+             <div class="mg-auto d-center">
+                 <div class="team">
+                     <div class="card-team">
+                         <div class="pre-status online"></div>
+                         <img src="src/components/avatar/smith.jpg" alt="">
+                         <div class="mg-auto d-center">
+                             <div class="user-status absolute">
+                                 <div class="card-status-user d-center">
+                                     <img src="src/components/icons/signal.svg" alt=" fa-signal">
+                                 </div>
+                                 <div class="card-status-user d-align">
+                                     <text class="bold">4min</text>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="card-team">
+                         <div class="pre-status online"></div>
+                         <img src="src/components/avatar/kate.png" alt="">
+                     </div>
+                     <div class="card-team">
+                         <div class="pre-status offline"></div>
+                         <img src="src/components/avatar/yamahr.png" alt="">
+                     </div>
+                     <div class="card-team">
+                         <div class="pre-status offline"></div>
+                         <img src="src/components/avatar/kiara.png" alt="">
+                     </div>
+                     <div class="card-team">
+                         <div class="pre-status offline"></div>
+                         <img src="src/components/avatar/stacy.png" alt="">
+                     </div>
+                     <div class="card-team">
+                         <div class="pre-status offline"></div>
+                         <img src="src/components/avatar/mich.png" alt="">
+                     </div>
+                 </div>
+             </div>
+             <br>
+             <div class="mg-auto d-center">
+                 <img src="src/components/icons/messages.svg" alt="fa-messages">
+             </div>
+             <div class="team">
+                 <div class="card-team">
+                     <div class="pre-status online"></div>
+                     <img src="src/components/avatar/gwen.jpg" alt="">
+                 </div>
+             </div>
+             <div class="block" onclick="hideMenu()" id="block"></div>
+             <div class="side-media" id="side-bar">
+                 <div class="header-title">
+                     <div class="card-header">
+                         <div class="card-title d-center">
+                             <img src="src/components/icons/favico/favicon.png" width="40" alt="favicon">
+                         </div>
+                         <div class="card-title d-align">
+                             <text class="bold fs-12 col-blue-grad">mcfela</text>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="search-side">
+                     <div class="search-bar flex side-search top-search br-10">
+                         <div class="search-char d-center">
+                             <img src="src/components/icons/search.svg" alt="fa-search">
+                         </div>
+                         <div class="search-char">
+                             <input type="text" placeholder="Search">
+                         </div>
+                         <div class="search-char d-center">
+                             <div class="ctrl-click d-center">
+                                 <text class="semi-bold">CTRL K</text>
+                             </div>
+                         </div>
+                     </div>
+                 </div><br><br>
+                 <div class="pager-items">
+                     <div class="card-items data-unactive" onclick="frameDash()">
+                         overview
+                         <input type="radio" id="side-overview" name="radio"/>
+                         <label for="side-overview">
+                             <div class="strap">
+                                 <div class="d-align">
+                                     <div class="left pr-2 d-center">
+                                         <div class="icon-box d-center">
+                                             <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM9.11 16.9C9.11 17.18 8.89 17.4 8.61 17.4H5.82C5.54 17.4 5.32 17.18 5.32 16.9V12.28C5.32 11.65 5.83 11.14 6.46 11.14H8.61C8.89 11.14 9.11 11.36 9.11 11.64V16.9ZM13.89 16.9C13.89 17.18 13.67 17.4 13.39 17.4H10.6C10.32 17.4 10.1 17.18 10.1 16.9V7.74C10.1 7.11 10.61 6.6 11.24 6.6H12.76C13.39 6.6 13.9 7.11 13.9 7.74V16.9H13.89ZM18.68 16.9C18.68 17.18 18.46 17.4 18.18 17.4H15.39C15.11 17.4 14.89 17.18 14.89 16.9V13.35C14.89 13.07 15.11 12.85 15.39 12.85H17.54C18.17 12.85 18.68 13.36 18.68 13.99V16.9Z" fill="#204875e0"></path> </g></svg>
+                                         </div>
+                                     </div>
+                                     <div class="left">
+                                         <text class="col-white semi-bold ltsp-01">Overview</text>
+                                     </div>
+                                 </div>
+                             </div>
+                         </label>
+                     </div>
+                     <div class="card-items data-unactive card3" onclick="frameShop()">
+                         project
+                         <input type="radio" id="side-project" name="radio"/>
+                         <label for="side-project">
+                         <div class="strap">
+                             <div class="d-align">
+                                 <div class="left pr-2 d-center">
+                                     <div class="icon-box d-center">
+                                         <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21.0582 11.8216L20.8982 11.6016C20.6182 11.2616 20.2882 10.9916 19.9082 10.7916C19.3982 10.5016 18.8182 10.3516 18.2182 10.3516H5.76824C5.16824 10.3516 4.59824 10.5016 4.07824 10.7916C3.68824 11.0016 3.33824 11.2916 3.04824 11.6516C2.47824 12.3816 2.20824 13.2816 2.29824 14.1816L2.66824 18.8516C2.79824 20.2616 2.96824 22.0016 6.13824 22.0016H17.8582C21.0282 22.0016 21.1882 20.2616 21.3282 18.8416L21.6982 14.1916C21.7882 13.3516 21.5682 12.5116 21.0582 11.8216ZM14.3882 17.3416H9.59824C9.20824 17.3416 8.89824 17.0216 8.89824 16.6416C8.89824 16.2616 9.20824 15.9416 9.59824 15.9416H14.3882C14.7782 15.9416 15.0882 16.2616 15.0882 16.6416C15.0882 17.0316 14.7782 17.3416 14.3882 17.3416Z" fill="#204875e0"></path> <path d="M20.56 8.59643C20.5976 8.97928 20.1823 9.23561 19.8175 9.11348C19.3127 8.94449 18.7814 8.86 18.2289 8.86H5.76891C5.21206 8.86 4.66381 8.95012 4.15225 9.12194C3.79185 9.24298 3.37891 8.99507 3.37891 8.61489V6.66C3.37891 3.09 4.46891 2 8.03891 2H9.21891C10.6489 2 11.0989 2.46 11.6789 3.21L12.8789 4.81C13.1289 5.15 13.1389 5.17 13.5789 5.17H15.9589C19.0846 5.17 20.3059 6.00724 20.56 8.59643Z" fill="#204875e0"></path> </g></svg>
+                                     </div>
+                                 </div>
+                                 <div class="left">
+                                     <text class="col-white semi-bold ltsp-01">Projects</text>
+                                 </div>
+                             </div>
+                         </div>
+                         </label>
+                     </div>
+                     <div class="card-items data-unactive" onclick="frameShop()">
+                         shop
+                         <input type="radio" id="side-shop" name="radio"/>
+                         <label for="side-shop">
+                             <div class="strap">
+                                 <div class="d-align">
+                                     <div class="left pr-2 d-center">
+                                         <div class="icon-box d-center">
+                                             <svg width="21.5" style="scale: 1.1;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19.9597 8.95844C19.2897 8.21844 18.2797 7.78844 16.8797 7.63844V6.87844C16.8797 5.50844 16.2997 4.18844 15.2797 3.26844C14.2497 2.32844 12.9097 1.88844 11.5197 2.01844C9.12975 2.24844 7.11975 4.55844 7.11975 7.05844V7.63844C5.71975 7.78844 4.70975 8.21844 4.03975 8.95844C3.06975 10.0384 3.09975 11.4784 3.20975 12.4784L3.90975 18.0484C4.11975 19.9984 4.90975 21.9984 9.20975 21.9984H14.7897C19.0897 21.9984 19.8797 19.9984 20.0897 18.0584L20.7897 12.4684C20.8997 11.4784 20.9297 10.0384 19.9597 8.95844ZM11.6597 3.40844C12.6597 3.31844 13.6097 3.62844 14.3497 4.29844C15.0797 4.95844 15.4897 5.89844 15.4897 6.87844V7.57844H8.50975V7.05844C8.50975 5.27844 9.97975 3.56844 11.6597 3.40844ZM11.9997 18.5784C9.90975 18.5784 8.20975 16.8784 8.20975 14.7884C8.20975 12.6984 9.90975 10.9984 11.9997 10.9984C14.0897 10.9984 15.7897 12.6984 15.7897 14.7884C15.7897 16.8784 14.0897 18.5784 11.9997 18.5784Z" fill="#204875e0"></path> <path d="M10.9999 16.5781C10.7499 16.5781 10.4999 16.4481 10.3599 16.2181C10.1499 15.8681 10.2599 15.3981 10.6199 15.1881L11.5099 14.6581V13.5781C11.5099 13.1681 11.8499 12.8281 12.2599 12.8281C12.6699 12.8281 12.9999 13.1581 12.9999 13.5781V15.0781C12.9999 15.3381 12.8599 15.5881 12.6399 15.7181L11.3899 16.4681C11.2699 16.5381 11.1299 16.5781 10.9999 16.5781Z" fill="#204875e0"></path> </g></svg>
+                                         </div>
+                                     </div>
+                                     <div class="left">
+                                         <text class="col-white semi-bold ltsp-01">Shop</text>
+                                     </div>
+                                 </div>
+                             </div>
+                         </label>
+                     </div>
+                     <div class="d-center">
+                        <div class="hx-line mgt-10"></div>
                     </div>
-                </div>
-                <br>
-                <div class="mg-auto d-center">
-                    <img src="src/components/icons/messages.svg" alt="fa-messages">
-                </div>
-                <div class="team">
-                    <div class="card-team">
-                        <div class="pre-status online"></div>
-                        <img src="src/components/avatar/gwen.jpg" alt="">
-                    </div>
-                </div>
-                <div class="block" onclick="hideMenu()" id="block"></div>
-                <div class="side-media" id="side-bar">
-
-                </div>
-            </section>
-        </div>
-    </div>
-    <nav class="media-nav">
-        <div class="nav d-center">
-            <div class="d-center nav-control">
-                <div class="card-nav-control d-center">
-                    <svg width="25" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-arrow-down nav-arrow" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1190</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M2.16,6.246 C2.385,6.246 2.61,6.308 2.81,6.442 L9.039,10.598 L15.076,6.401 C15.617,6.042 16.346,6.188 16.705,6.729 C17.065,7.268 16.92,8 16.38,8.359 L9.692,12.989 C9.298,13.253 8.784,13.254 8.388,12.991 L1.508,8.402 C0.966,8.042 0.82,7.31 1.179,6.77 C1.407,6.429 1.78,6.246 2.16,6.246 L2.16,6.246 Z" fill="#648ebe35" class="si-glyph-fill"> </path> </g> </g></svg>
-                </div>
-                <script>
-                    document.querySelector('.card-nav-control').onclick= def
-                    function def() {
-                        document.querySelector('.media-nav').setAttribute('style','transform:translateY(85%)')
-                        setTimeout(() => {
-                            document.querySelector('.card-nav-control').setAttribute('style','background:unset')
-                            document.querySelector('.nav-arrow').setAttribute('style','opacity:1;visibility:visible;scale:1')
-                         document.querySelector('.card-nav-control').onclick= rev
-                        }, 1000);
-                    }
-                    function rev() {
-                            document.querySelector('.media-nav').setAttribute('style','transform:translateY(0)')
-                        setTimeout(() => {
-                            document.querySelector('.card-nav-control').setAttribute('style','background:#648ebe25')
-                            document.querySelector('.nav-arrow').setAttribute('style','opacity:0;visibility:hidden;scale:.95')
-                           document.querySelector('.card-nav-control').onclick= def
-                        }, 1000); 
-                        }
-                </script>
-            </div>
-            <div class="search-bar">
-                <div class="search-char d-center">
-                    <img src="src/components/icons/search.svg" alt="fa-search">
-                </div>
-                <div class="search-char">
-                    <input type="text" placeholder="Search">
-                </div>
-                <div class="search-char d-center">
-                    <img src="src/components/icons/cmd.svg" alt="fa-cmd">
-                </div>
-            </div>
-        </div>
-        <div class="nav d-center">
-            <div class="mg-auto">
-                <div class="card-nav" onclick="frameDash()">
-                    <div class="n-00 d-center">
-                        <div class="span-label">
-                            <text class="col-white ltsp-01">+3</text>
-                        </div>
-                        <img src="src/components/icons/home2.svg" alt="fa-home">
-                    </div>
-                    <div class="n-00 d-center">
-                        <text class="col-dark-grey-5 ltsp-01">Home</text>
-                    </div>
-                </div>
-                <div class="card-nav" onclick="frameShop()">
-                    <div class="n-00 d-center">
-                        <div class="span-label">
-                            <text class="col-white ltsp-01">+5</text>
-                        </div>
-                        <img src="src/components/icons/project.svg" width="23" alt="fa-home">
-                    </div>
-                    <div class="n-00 d-center">
-                        <text class="col-dark-grey-5 ltsp-01">Projects</text>
-                    </div>
-                </div>
-                <div class="card-nav">
-                    <div class="n-00 d-center">
-                        <img src="src/components/icons/team.svg" width="22" alt="fa-home">
-                    </div>
-                    <div class="n-00 d-center">
-                        <text class="col-dark-grey-5 ltsp-01">Team</text>
-                    </div>
-                </div>
-                <div class="card-nav">
-                    <div class="n-00 d-center">
-                        <img src="src/components/icons/option.svg" width="22" alt="fa-home">
-                    </div>
-                    <div class="n-00 d-center">
-                        <text class="col-dark-grey-5 ltsp-01">more</text>
-                    </div>
+                     <div class="card-items data-unactive" onclick="frameTeam()">
+                         community
+                         <input type="radio" id="side-community" name="radio"/>
+                         <label for="side-community">
+                             <div class="strap">
+                                 <div class="d-align">
+                                     <div class="left pr-2 d-center">
+                                         <div class="icon-box d-center">
+                                             <svg width="21.5" style="scale: 1.15;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM12 6C13.99 6 15.6 7.61 15.6 9.6C15.6 10.07 15.51 10.52 15.35 10.93C14.94 11.97 14.05 12.78 12.95 13.08C12.65 13.16 12.33 13.21 12 13.21C11.67 13.21 11.35 13.17 11.05 13.08C9.95 12.78 9.06 11.98 8.65 10.93C8.49 10.52 8.4 10.07 8.4 9.6C8.4 7.61 10.01 6 12 6ZM9.6 18C7.61 18 6 16.39 6 14.4C6 13.2675 6.52861 12.2563 7.34433 11.5961C7.58105 11.4045 7.91916 11.5252 8.06744 11.7912C8.65221 12.8402 9.64554 13.6195 10.81 13.93C11.19 14.04 11.58 14.09 12 14.09C12.2489 14.09 12.4868 14.0716 12.7181 14.0347C12.9554 13.9969 13.2 14.1497 13.2 14.39C13.2 15.45 12.74 16.41 12 17.07C11.36 17.65 10.52 18 9.6 18ZM14.4 18C14.0515 18 13.71 17.9512 13.3878 17.8576C13.0613 17.7628 13.0015 17.3559 13.2059 17.0843C13.781 16.3202 14.1 15.3764 14.1 14.4C14.1 14.2 14.08 13.99 14.05 13.8C14.0321 13.6868 14.0898 13.5756 14.1899 13.5197C14.914 13.1155 15.5205 12.5224 15.9242 11.7942C16.0723 11.5272 16.4106 11.4042 16.6487 11.5953C17.471 12.2555 18 13.267 18 14.4C18 16.39 16.39 18 14.4 18Z" fill="#204875e0"></path> </g></svg>
+                                         </div>
+                                     </div>
+                                     <div class="left">
+                                         <text class="col-white semi-bold ltsp-01">Community</text>
+                                     </div>
+                                 </div>
+                             </div>
+                         </label>
+                     </div>
+                     <div class="card-items data-unactive">
+                         tutorials
+                         <input type="radio" id="side-tutorials" name="radio"/>
+                         <label for="side-tutorials">
+                             <div class="strap">
+                                 <div class="d-align">
+                                     <div class="left pr-2 d-center">
+                                         <div class="icon-box d-center">
+                                            <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.9808 3.02084C20.1108 2.15084 18.8808 1.81084 17.6908 2.11084L7.89084 4.56084C6.24084 4.97084 4.97084 6.25084 4.56084 7.89084L2.11084 17.7008C1.81084 18.8908 2.15084 20.1208 3.02084 20.9908C3.68084 21.6408 4.55084 22.0008 5.45084 22.0008C5.73084 22.0008 6.02084 21.9708 6.30084 21.8908L16.1108 19.4408C17.7508 19.0308 19.0308 17.7608 19.4408 16.1108L21.8908 6.30084C22.1908 5.11084 21.8508 3.88084 20.9808 3.02084ZM12.0008 15.8808C9.86084 15.8808 8.12084 14.1408 8.12084 12.0008C8.12084 9.86084 9.86084 8.12084 12.0008 8.12084C14.1408 8.12084 15.8808 9.86084 15.8808 12.0008C15.8808 14.1408 14.1408 15.8808 12.0008 15.8808Z" fill="#204875e0"></path> </g></svg>
+                                         </div>
+                                     </div>
+                                     <div class="left">
+                                         <text class="col-white semi-bold ltsp-01">Discover</text>
+                                     </div>
+                                 </div>
+                             </div>
+                         </label>
+                     </div>
+                 </div>
+                 <div class="card-message d-center">
+                     <div class="data-message">
+                         <text class="fs-10 bold col-white">Upgrade to Pro</text>
+                         <br>
+                         <div class="transY-1">
+                             <text class="fs-8 lnh-10 col-light-grey">Get 1 month free <br> and unlock</text>
+                         </div><br>
+                         <button class="btn-upgrade">
+                             <text class="fs-10 bold">Upgrade</text>
+                         </button>
+                     </div>
+                 </div>
+                 <div class="botom-pager">
+                     <div class="card-items data-unactive">
+                         settings
+                         <input type="radio" id="side-settings" name="radio"/>
+                         <label for="side-settings">
+                             <div class="strap">
+                                 <div class="d-align">
+                                     <div class="left pr-2 d-center">
+                                         <div class="icon-box d-center">
+                                             <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM7.67 5.5C7.67 5.09 8.01 4.75 8.42 4.75C8.83 4.75 9.17 5.09 9.17 5.5V9.4C9.17 9.81 8.83 10.15 8.42 10.15C8.01 10.15 7.67 9.81 7.67 9.4V5.5ZM9.52282 16.4313C9.31938 16.5216 9.17 16.7132 9.17 16.9358V18.5C9.17 18.91 8.83 19.25 8.42 19.25C8.01 19.25 7.67 18.91 7.67 18.5V16.9358C7.67 16.7132 7.5206 16.5216 7.31723 16.4311C6.36275 16.0064 5.7 15.058 5.7 13.95C5.7 12.45 6.92 11.22 8.42 11.22C9.92 11.22 11.15 12.44 11.15 13.95C11.15 15.0582 10.4791 16.0066 9.52282 16.4313ZM16.33 18.5C16.33 18.91 15.99 19.25 15.58 19.25C15.17 19.25 14.83 18.91 14.83 18.5V14.6C14.83 14.19 15.17 13.85 15.58 13.85C15.99 13.85 16.33 14.19 16.33 14.6V18.5ZM15.58 12.77C14.08 12.77 12.85 11.55 12.85 10.04C12.85 8.93185 13.5209 7.98342 14.4772 7.55873C14.6806 7.46839 14.83 7.27681 14.83 7.05421V5.5C14.83 5.09 15.17 4.75 15.58 4.75C15.99 4.75 16.33 5.09 16.33 5.5V7.06421C16.33 7.28681 16.4794 7.47835 16.6828 7.56885C17.6372 7.9936 18.3 8.94195 18.3 10.05C18.3 11.55 17.08 12.77 15.58 12.77Z" fill="#204875e0"></path> </g></svg>
+                                         </div>
+                                     </div>
+                                     <div class="left">
+                                         <text class="col-white semi-bold ltsp-01">Settings</text>
+                                     </div>
+                                 </div>
+                             </div>
+                         </label>
+                     </div>
+                     <div class="card-items data-unactive">
+                         <div class="d-align">
+                             <div class="left pr-2 d-center">
+                                 <div class="icon-box d-center">
+                                     <svg width="21.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM16.37 14.63L14.15 16.85C13.61 17.39 12.91 17.65 12.21 17.65C11.51 17.65 10.8 17.38 10.27 16.85C9.2 15.78 9.2 14.03 10.27 12.96L11.68 11.55C11.97 11.26 12.45 11.26 12.74 11.55C13.03 11.84 13.03 12.32 12.74 12.61L11.33 14.02C10.84 14.51 10.84 15.3 11.33 15.79C11.82 16.28 12.61 16.28 13.1 15.79L15.32 13.57C15.93 12.96 16.27 12.14 16.27 11.27C16.27 10.4 15.93 9.59 15.32 8.97C14.09 7.74 11.95 7.74 10.72 8.97L8.29 11.4C7.25 12.44 7.25 14.14 8.29 15.19C8.58 15.48 8.58 15.96 8.29 16.25C8 16.54 7.52 16.54 7.23 16.25C5.6 14.62 5.6 11.97 7.23 10.34L9.65 7.92C10.55 7.02 11.74 6.53 13.01 6.53C14.28 6.53 15.47 7.02 16.37 7.92C17.27 8.82 17.76 10.01 17.76 11.28C17.76 12.55 17.27 13.74 16.37 14.63Z" fill="#204875e0"></path> </g></svg>
+                                 </div>
+                             </div>
+                             <div class="left">
+                                 <text class="col-white semi-bold ltsp-01">Logout</text>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </div>
+ </div>
+ <nav class="media-nav">
+     <div class="nav d-center">
+         <div class="d-center nav-control">
+             <div class="card-nav-control d-center">
+                 <svg width="25" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-arrow-down nav-arrow" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1190</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M2.16,6.246 C2.385,6.246 2.61,6.308 2.81,6.442 L9.039,10.598 L15.076,6.401 C15.617,6.042 16.346,6.188 16.705,6.729 C17.065,7.268 16.92,8 16.38,8.359 L9.692,12.989 C9.298,13.253 8.784,13.254 8.388,12.991 L1.508,8.402 C0.966,8.042 0.82,7.31 1.179,6.77 C1.407,6.429 1.78,6.246 2.16,6.246 L2.16,6.246 Z" fill="#648ebe35" class="si-glyph-fill"> </path> </g> </g></svg>
+             </div>
+             <script>
+                 document.querySelector('.card-nav-control').onclick= def
+                 function def() {
+                     document.querySelector('.media-nav').setAttribute('style','transform:translateY(85%)')
+                     setTimeout(() => {
+                         document.querySelector('.card-nav-control').setAttribute('style','background:unset')
+                         document.querySelector('.nav-arrow').setAttribute('style','opacity:1;visibility:visible;scale:1')
+                      document.querySelector('.card-nav-control').onclick= rev
+                     }, 1000);
+                 }
+                 function rev() {
+                         document.querySelector('.media-nav').setAttribute('style','transform:translateY(0)')
+                     setTimeout(() => {
+                         document.querySelector('.card-nav-control').setAttribute('style','background:#648ebe25')
+                         document.querySelector('.nav-arrow').setAttribute('style','opacity:0;visibility:hidden;scale:.95')
+                        document.querySelector('.card-nav-control').onclick= def
+                     }, 1000); 
+                     }
+             </script>
+         </div>
+         <div class="search-bar nav-search flex">
+             <div class="search-char d-center">
+                 <img src="src/components/icons/search.svg" alt="fa-search">
+             </div>
+             <div class="search-char">
+                 <input type="text" placeholder="Search">
+             </div>
+             <div class="search-char d-center">
+                 <img src="src/components/icons/cmd.svg" alt="fa-cmd">
+             </div>
+         </div>
+     </div>
+     <div class="nav d-center">
+         <div class="mg-auto">
+             <div class="card-nav" onclick="frameDash()">
+                 <div class="n-00 d-center">
+                     <div class="span-label">
+                         <text class="col-white ltsp-01">+3</text>
+                     </div>
+                     <img src="src/components/icons/home2.svg" alt="fa-home">
+                 </div>
+                 <div class="n-00 d-center">
+                     <text class="col-dark-grey-5 ltsp-01">Home</text>
+                 </div>
+             </div>
+             <div class="card-nav" onclick="frameShop()">
+                 <div class="n-00 d-center">
+                     <div class="span-label">
+                         <text class="col-white ltsp-01">+5</text>
+                     </div>
+                     <img src="src/components/icons/project.svg" width="23" alt="fa-home">
+                 </div>
+                 <div class="n-00 d-center">
+                     <text class="col-dark-grey-5 ltsp-01">Projects</text>
+                 </div>
+             </div>
+             <div class="card-nav"  onclick="frameTeam()">
+                 <div class="n-00 d-center">
+                     <img src="src/components/icons/team.svg" width="22" alt="fa-home">
+                 </div>
+                 <div class="n-00 d-center">
+                     <text class="col-dark-grey-5 ltsp-01">Team</text>
+                 </div>
+             </div>
+             <div class="card-nav">
+                 <div class="n-00 d-center">
+                     <img src="src/components/icons/option.svg" width="22" alt="fa-home">
+                 </div>
+                 <div class="n-00 d-center">
+                     <text class="col-dark-grey-5 ltsp-01">more</text>
+                 </div>
                 </div>
             </div>
         </div>
     </nav>
     <script>
-        window.onload=frameHome()
+        // window.onload=frameDash()
 
-window.onload=function() {
-    
-    setTimeout(() => {
-        document.querySelector('.side-media').innerHTML=document.querySelector('.side-react').innerHTML
-    }, 0);
-}
  function menu() {
     var side_bar = document.getElementById("side-bar")
     var block = document.getElementById("block")
@@ -408,72 +602,6 @@ window.onload=function() {
     }, 0);
  }
 
- function frameProjects() {
-    var frame = document.getElementById('frame')
-    var indicator = document.getElementById('indicator2')
-    var indicator3 = document.getElementById('indicator3')
-    var card0 = document.getElementsByClassName('card-items')[0]
-    var card1 = document.getElementsByClassName('card-items')[1]
-    var card2 = document.getElementsByClassName('card-items')[2]
-    var card3 = document.getElementsByClassName('card-items')[3]
-    var card4 = document.getElementsByClassName('card-items')[4]
-    var card5 = document.getElementsByClassName('card-items')[5]
-
-        var dsep0 = document.getElementsByClassName('d-sep')[2]
-            var dsep1 = document.getElementsByClassName('d-sep')[3]
-
-setTimeout(() => {
-    dsep0.onclick=function(){
-        const data_item_home = document.querySelector('.data-item-home')
-        const data_item_arrow = document.querySelector('.data-item-arrow')
-    dsep0.className = 'data-item-active'
-    dsep1.style.marginTop='7px'
-        dsep1.className='data-item-unactive'
-        data_item_home.style.height=0
-data_item_home.style.paddingTop=0
-data_item_arrow.style.rotate='-90deg'
-card0.style.background='unset'
-// document.getElementsByClassName('d-sep')[0].className='data-item-unactive'
-// document.getElementsByClassName('d-sep')[0].style.marginTop=0
-        frameShop()
-}
-dsep1.onclick=function() {
-    const data_item_home = document.querySelector('.data-item-home')
-    const data_item_arrow = document.querySelector('.data-item-arrow')
-    dsep1.className = 'data-item-active'
-    dsep0.style.marginTop=0
-        dsep1.style.marginTop='7px'
-        dsep0.className='data-item-unactive'
-        data_item_home.style.height=0
-data_item_home.style.paddingTop=0
-data_item_arrow.style.rotate='-90deg'
-card0.style.background='unset'
-        frameShop()
-}
-}, 0);
-
-    const data_item_projects = document.querySelector('.data-item-projects')
-    const data_item_arrow = document.querySelector('.data-item-project-arrow')
-    const card_3 = document.querySelector('.card3')
-
-if (card_3.style.background==='#648ebe20',
-    data_item_projects.style.height==='5.2em',
-data_item_projects.style.paddingTop==='5px',
-data_item_arrow.style.rotate==='90deg'
-){
-data_item_projects.style.height=0
-data_item_projects.style.paddingTop=0
-data_item_arrow.style.rotate='0deg'
-  card_3.style.background='unset'
-
-    } else {
-        data_item_projects.style.height='5.2em'
-        data_item_projects.style.paddingTop='5px'
-        data_item_arrow.style.rotate='90deg'
-          card_3.style.background='#648ebe20'
-    }
-
-}
 function frameShop() {
     var frame = document.getElementById('frame')
     var indicator = document.getElementById('indicator2')
@@ -494,71 +622,6 @@ frame.style.opacity = 1
 hideMenu()
 }
 
-function frameHome() {
-    var frame = document.getElementById('frame')
-    var indicator = document.getElementById('indicator2')
-    var indicator3 = document.getElementById('indicator3')
-    var card0 = document.getElementsByClassName('card-items')[0]
-    var card1 = document.getElementsByClassName('card-items')[1]
-    var card2 = document.getElementsByClassName('card-items')[2]
-    var card3 = document.getElementsByClassName('card-items')[3]
-    var card4 = document.getElementsByClassName('card-items')[4]
-    var card5 = document.getElementsByClassName('card-items')[5]
-
-        var dsep0 = document.getElementsByClassName('d-sep')[0]
-            var dsep1 = document.getElementsByClassName('d-sep')[1]
-
-setTimeout(() => {
-    dsep0.onclick=function(){
-        const data_item_projects = document.querySelector('.data-item-projects')
-        const data_item_arrow = document.querySelector('.data-item-project-arrow')
-    dsep0.className = 'data-item-active'
-    dsep1.style.marginTop='7px'
-        dsep1.className='data-item-unactive'
-        frameDash()
-        data_item_projects.style.height=0
-data_item_projects.style.paddingTop=0
-data_item_arrow.style.rotate='-0deg'
-card3.style.background='unset'
-}
-dsep1.onclick=function() {
-    const data_item_projects = document.querySelector('.data-item-projects')
-    const data_item_arrow = document.querySelector('.data-item-project-arrow')
-    dsep1.className = 'data-item-active'
-    dsep0.style.marginTop=0
-        dsep1.style.marginTop='7px'
-        dsep0.className='data-item-unactive'
-        frameDash()
-        data_item_projects.style.height=0
-data_item_projects.style.paddingTop=0
-data_item_arrow.style.rotate='-0deg'
-card3.style.background='unset'
-}
-}, 0);
-
-    const data_item_home = document.querySelector('.data-item-home')
-    const data_item_arrow = document.querySelector('.data-item-arrow')
-
-if (data_item_home.style.height==='5.2em',
-data_item_home.style.paddingTop==='5px',
-data_item_arrow.style.rotate==='0deg'
-){
-        data_item_home.style.height=0
-data_item_home.style.paddingTop=0
-data_item_arrow.style.rotate='-90deg'
-    } else {
-        data_item_home.style.height='5.2em'
-        data_item_home.style.paddingTop='5px'
-        data_item_arrow.style.rotate='0deg'
-    }
-
-if(card0.click) {
-    card0.style.background = '#648ebe20'
-    card3.style.background = 'unset'
-}
-
-// data-item-unactive
-}
 function frameDash() {
     var frame = document.getElementById('frame')
     var indicator = document.getElementById('indicator2')
@@ -571,6 +634,28 @@ frame.style.opacity = 0
         indicator.innerHTML='Dashboard'
         indicator3.innerHTML='Overview'
 frame.style.opacity = 0
+}, 500);
+setTimeout(() => {
+    frame.style.scale = 1
+frame.style.opacity = 1
+}, 700);
+hideMenu()
+}
+
+function frameTeam() {
+    var frame = document.getElementById('frame')
+    var indicator = document.getElementById('indicator2')
+    var indicator3 = document.getElementById('indicator3')
+    var indicator4 = document.getElementById('indicator4')
+    frame.style.scale = 1.03
+frame.style.opacity = 0
+    setTimeout(() => {
+    frame.src='team.html'
+    frame.style.scale = .97
+        indicator.innerHTML='Team'
+        indicator3.innerHTML='Members'
+frame.style.opacity = 0
+
 }, 500);
 setTimeout(() => {
     frame.style.scale = 1
