@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .layout-container {
     width: 100%;
     height: 100%;
@@ -1159,61 +1161,42 @@ a {
     opacity: .5;
 }
 
-@font-face {
-    font-family: fontReg;
-    src: url(/src/fonts/SF-Pro-Rounded-Regular.otf);
-  }
   
   text {
-    font-family: fontReg;
-    font-size: .95em;
+    font-family: "Nunito", serif;
+    font-weight: 500 !important;
+    font-style: normal;
   }
 
-  @font-face {
-    font-family: fontMed;
-    src: url(/src/fonts/SF-Pro-Rounded-Medium.otf);
-  }
   
   .font-medium {
-    font-family: fontMed;
-    font-size: .95em;
-  }
-
-  @font-face {
-    font-family: fontBold;
-    src: url(/src/fonts/SF-Pro-Rounded-Bold.otf);
+    font-family: "Nunito", serif;
+    font-weight: 500 !important;
+    font-style: normal;
   }
   
   .bold {
-    font-family: fontBold;
-  }
-
-  @font-face {
-    font-family: fontSemiBold;
-    src: url(/src/fonts/SF-Pro-Rounded-Semibold.otf);
+    font-family: "Nunito", serif;
+    font-weight: 800 !important;
+    font-style: normal;
   }
   
   .semi-bold {
-    font-family: fontSemiBold;
+    font-family: "Nunito", serif;
+    font-weight: 700 !important;
+    font-style: normal;
   }
 
-  @font-face {
-    font-family: fontHaevy;
-    src: url(/src/fonts/SF-Pro-Rounded-Heavy.otf);
-  }
-  
   .heavy {
-    font-family: fontHaevy;
-  }
-
-  @font-face {
-    font-family: fontLight;
-    src: url(/src/fonts/SF-Pro-Rounded-Light.otf);
+    font-family: "Nunito", serif;
+    font-weight: 900 !important;
+    font-style: normal;
   }
   
   .light {
-    font-family: fontLight;
-    font-size: .95em;
+    font-family: "Nunito", serif;
+    font-weight: 400 !important;
+    font-style: normal;
   }
 
   br, img {
@@ -1804,7 +1787,9 @@ a {
     width: 100%;
     height: 90%;
     outline: 0;
-    font-family: fontMed;
+    font-family: "Nunito", serif;
+    font-weight: 600 !important;
+    font-style: normal;
     background: unset;
     border: none;
     color: #4f678a;
@@ -2023,7 +2008,9 @@ button:hover {
     width: 100%;
     height: 90%;
     outline: 0;
-    font-family: fontMed;
+    font-family: "Nunito", serif;
+    font-weight: 600 !important;
+    font-style: normal;
     background: unset;
     border: none;
     color: #335174e0;
@@ -2055,7 +2042,9 @@ button:hover {
     width: 100%;
     height: 90%;
     outline: 0;
-    font-family: fontMed;
+    font-family: "Nunito", serif;
+    font-weight: 600 !important;
+    font-style: normal;
     background: unset;
     border: none;
     color: #335174e0;
@@ -2088,7 +2077,9 @@ button:hover {
     width: 100% !important;
     height: 90%;
     outline: 0;
-    font-family: fontMed;
+    font-family: "Nunito", serif;
+    font-weight: 600 !important;
+    font-style: normal;
     background: unset;
     border: none;
     color: #335174e0;
@@ -2923,7 +2914,9 @@ button:hover {
 
 .col-blue-3 {
     color: #004cff;
-    font-family: fontMed;
+    font-family: "Nunito", serif;
+    font-weight: 600 !important;
+    font-style: normal;
 }
 
 .col-dark-blue {
@@ -2963,12 +2956,16 @@ button:hover {
 .col-dark-grey-5 {
     color: #57697e;
     font-size: .85em;
-    font-family: fontMed;
+    font-family: "Nunito", serif;
+    font-weight: 600 !important;
+    font-style: normal;
 }
 
 .col-dark-grey-5cs {
     color: #57697e;
-    font-family: fontMed;
+    font-family: "Nunito", serif;
+    font-weight: 650 !important;
+    font-style: normal;
 }
 
 .col-dark-grey-5cv {
